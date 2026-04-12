@@ -6,6 +6,7 @@ SIFT 跟点：仅在逻辑图有效掩膜内提特征；锚点可缓存。
 from __future__ import annotations
 
 import math
+import os
 import threading
 import time
 import cv2
@@ -177,6 +178,23 @@ class SiftMapTrackerApp:
         if _di > 0:
             self.root.after(_di, self._smooth_display_tick)
 
+        if bool(getattr(config, "SIFT_TRACK_PROFILE", False)):
+            lp = str(getattr(config, "SIFT_TRACK_PROFILE_LOG_PATH", "") or "").strip()
+            if lp:
+                abs_lp = os.path.abspath(lp)
+                try:
+                    d = os.path.dirname(abs_lp)
+                    if d:
+                        os.makedirs(d, exist_ok=True)
+                    with open(abs_lp, "a", encoding="utf-8") as fp:
+                        fp.write(
+                            f"\n[SIFT profile] --- session {time.strftime('%Y-%m-%d %H:%M:%S')} ---\n"
+                        )
+                        fp.flush()
+                    print(f"SIFT 分段计时已开启，日志文件: {abs_lp}", flush=True)
+                except OSError as e:
+                    print(f"SIFT 分段计时：无法写入日志文件 {abs_lp!r}: {e}", flush=True)
+
     def _get_mss_sct(self):
         """每个线程各自持有一个 mss.mss()，禁止跨线程复用。"""
         sct = getattr(self._mss_tls, "sct", None)
@@ -302,14 +320,24 @@ class SiftMapTrackerApp:
         截屏 + SIFT + 匹配。可在后台线程调用（勿碰 Tk）。
         返回 (last_x, last_y, lost_frames, is_inertial)；显示由 _compose_display_view / 插帧 负责。
         """
+        prof = bool(getattr(config, "SIFT_TRACK_PROFILE", False))
+        _pc = time.perf_counter
+        t_all = _pc()
+        seg_ms: dict[str, float] = {}
+
         lx, ly, lf = self.last_x, self.last_y, self.lost_frames
 
         clear_after = int(getattr(config, "SIFT_CLEAR_LOCK_AFTER_LOST_FRAMES", 0))
         if clear_after > 0 and lf >= clear_after:
             lx, ly, lf = None, None, 0
 
+        t = _pc()
         screenshot = self._get_mss_sct().grab(self.minimap_region)
         minimap_bgr = np.array(screenshot)[:, :, :3]
+        if prof:
+            seg_ms["grab"] = (_pc() - t) * 1000.0
+
+        t = _pc()
         minimap_gray = cv2.cvtColor(minimap_bgr, cv2.COLOR_BGR2GRAY)
         minimap_gray = self.clahe.apply(minimap_gray)
 
@@ -321,38 +349,56 @@ class SiftMapTrackerApp:
             mask_mini = _minimap_inscribed_ellipse_mask(mh, mw, esc)
         else:
             mask_mini = None
+        if prof:
+            seg_ms["prep"] = (_pc() - t) * 1000.0
+
+        t = _pc()
         kp_mini, des_mini = self.sift.detectAndCompute(mini_gray, mask_mini)
+        if prof:
+            seg_ms["sift_q"] = (_pc() - t) * 1000.0
 
         min_kp = int(getattr(config, "SIFT_MINIMAP_MIN_KP", 8))
         if des_mini is not None and len(kp_mini) < min_kp:
             des_mini = None
 
+        t = _pc()
         kp_train, des_train = self._select_train_kp_des_state(lx, ly, lf)
+        if prof:
+            seg_ms["train"] = (_pc() - t) * 1000.0
+
+        nq = int(len(des_mini)) if des_mini is not None else 0
+        nt = int(len(des_train)) if des_train is not None else 0
 
         found = False
         center_x, center_y = None, None
         is_inertial = False
 
         if des_mini is not None and len(kp_mini) >= 2 and des_train is not None:
-            nt = len(des_train)
             use_bf = nt < int(getattr(config, "SIFT_USE_BF_BELOW", 3500))
+            t = _pc()
             if use_bf:
                 matches = self.bf.knnMatch(des_mini, des_train, k=2)
             else:
                 matches = self.flann.knnMatch(des_mini, des_train, k=2)
+            if prof:
+                seg_ms["knn"] = (_pc() - t) * 1000.0
 
+            t = _pc()
             good_matches = []
             for m_n in matches:
                 if len(m_n) == 2:
                     m, n = m_n
                     if m.distance < config.SIFT_MATCH_RATIO * n.distance:
                         good_matches.append(m)
+            if prof:
+                seg_ms["ratio"] = (_pc() - t) * 1000.0
 
             min_need = int(config.SIFT_MIN_MATCH_COUNT)
             if self._force_fullmap_match_state(lx, ly, lf):
                 min_need += int(getattr(config, "SIFT_RELOC_EXTRA_MIN_MATCH", 0))
 
             if len(good_matches) >= min_need:
+                t = _pc()
                 src_pts = np.float32(
                     [kp_mini[m.queryIdx].pt for m in good_matches]
                 ).reshape(-1, 1, 2)
@@ -377,6 +423,8 @@ class SiftMapTrackerApp:
                         center_y = int(round(temp_y))
                         lx, ly = center_x, center_y
                         lf = 0
+                if prof:
+                    seg_ms["pose"] = (_pc() - t) * 1000.0
 
         if not found and lx is not None and ly is not None:
             lf += 1
@@ -384,6 +432,43 @@ class SiftMapTrackerApp:
                 found = True
                 center_x, center_y = lx, ly
                 is_inertial = True
+
+        if prof:
+            seg_ms["total"] = (_pc() - t_all) * 1000.0
+            self._profile_i = getattr(self, "_profile_i", 0) + 1
+            ev = int(getattr(config, "SIFT_TRACK_PROFILE_EVERY", 25))
+            if ev <= 0:
+                ev = 1
+            do_log = self._profile_i == 1 or (self._profile_i % ev == 0)
+            if do_log:
+                def g(k: str) -> float:
+                    return float(seg_ms.get(k, 0.0))
+
+                bf = "bf" if nt < int(getattr(config, "SIFT_USE_BF_BELOW", 3500)) else "flann"
+                line = (
+                    "[SIFT profile] "
+                    f"total={g('total'):.1f}ms "
+                    f"grab={g('grab'):.1f} prep={g('prep'):.1f} "
+                    f"sift_q={g('sift_q'):.1f} train={g('train'):.1f} "
+                    f"knn({bf})={g('knn'):.1f} ratio={g('ratio'):.1f} pose={g('pose'):.1f} | "
+                    f"nq={nq} nt={nt}"
+                )
+                log_path = getattr(config, "SIFT_TRACK_PROFILE_LOG_PATH", None)
+                if log_path:
+                    lp = str(log_path).strip()
+                    if lp:
+                        try:
+                            abs_lp = os.path.abspath(lp)
+                            d = os.path.dirname(abs_lp)
+                            if d:
+                                os.makedirs(d, exist_ok=True)
+                            with open(abs_lp, "a", encoding="utf-8") as fp:
+                                fp.write(line + "\n")
+                                fp.flush()
+                        except OSError as e:
+                            print(f"[SIFT profile] 无法写入日志 {abs_lp!r}: {e}", flush=True)
+                if getattr(config, "SIFT_TRACK_PROFILE_PRINT", False):
+                    print(line, flush=True)
 
         return lx, ly, lf, is_inertial
 
