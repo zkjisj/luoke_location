@@ -5,6 +5,7 @@ SIFT 跟点：仅在逻辑图有效掩膜内提特征；锚点可缓存。
 """
 from __future__ import annotations
 
+import math
 import threading
 import time
 import cv2
@@ -150,6 +151,7 @@ class SiftMapTrackerApp:
         search_params = dict(checks=int(getattr(config, "SIFT_FLANN_CHECKS", 28)))
         self.flann = cv2.FlannBasedMatcher(index_params, search_params)
         self.bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
+        self._rng = np.random.default_rng()
 
         # mss 在 Win 上依赖线程局部 DC；须在调用 grab 的同一线程内创建并复用 MSS 实例
         self._mss_tls = threading.local()
@@ -165,8 +167,15 @@ class SiftMapTrackerApp:
         self._track_async_busy = False
         self._fps_last_t: float | None = None
         self._fps_ema = 0.0
+        self._track_inertial = False
+        self._smooth_x: float | None = None
+        self._smooth_y: float | None = None
+        self._smooth_tick_last_t: float | None = None
 
         self.update_tracker()
+        _di = int(getattr(config, "SIFT_DISPLAY_INTERP_MS", 0) or 0)
+        if _di > 0:
+            self.root.after(_di, self._smooth_display_tick)
 
     def _get_mss_sct(self):
         """每个线程各自持有一个 mss.mss()，禁止跨线程复用。"""
@@ -200,14 +209,98 @@ class SiftMapTrackerApp:
         idx = np.flatnonzero(m)
         if idx.size < min_a:
             return self.kp_big, self.des_big
+        cap = int(getattr(config, "SIFT_LOCAL_MAX_ANCHORS", 0) or 0)
+        if cap > 0 and idx.size > cap:
+            idx = self._rng.choice(idx, size=cap, replace=False)
+            idx.sort()
         return [self.kp_big[i] for i in idx], self.des_big[idx]
+
+    def _compose_display_view(
+        self,
+        center_x: float | None,
+        center_y: float | None,
+        is_inertial: bool,
+    ) -> np.ndarray:
+        """按大地图显示层裁剪窗口并画位置点；center 可为亚像素（插帧平滑）。"""
+        vs = int(config.VIEW_SIZE)
+        half = int(getattr(config, "VIEW_MAP_HALF_SIZE", vs // 2))
+        half = max(half, vs // 2)
+
+        if center_x is None or center_y is None:
+            display_crop = np.zeros((vs, vs, 3), dtype=np.uint8)
+            cv2.putText(
+                display_crop,
+                "SIFT Searching...",
+                (70, 200),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.8,
+                (0, 255, 255),
+                2,
+            )
+            return display_crop
+
+        cx = float(center_x)
+        cy = float(center_y)
+        cx_i = int(round(cx))
+        cy_i = int(round(cy))
+        y1 = max(0, cy_i - half)
+        y2 = min(self.map_height, cy_i + half)
+        x1 = max(0, cx_i - half)
+        x2 = min(self.map_width, cx_i + half)
+        roi = self.display_map_bgr[y1:y2, x1:x2]
+        ch, cw = roi.shape[:2]
+        loc_x = cx - float(x1)
+        loc_y = cy - float(y1)
+        if cw >= 1 and ch >= 1:
+            display_crop = cv2.resize(
+                roi, (vs, vs), interpolation=cv2.INTER_AREA
+            )
+            lx_s = int(round(loc_x * vs / cw))
+            ly_s = int(round(loc_y * vs / ch))
+            lx_s = max(0, min(vs - 1, lx_s))
+            ly_s = max(0, min(vs - 1, ly_s))
+            r_in = max(4, int(round(10 * vs / max(cw, ch))))
+            r_out = max(5, int(round(12 * vs / max(cw, ch))))
+            if not is_inertial:
+                cv2.circle(
+                    display_crop,
+                    (lx_s, ly_s),
+                    radius=r_in,
+                    color=(0, 0, 255),
+                    thickness=-1,
+                )
+                cv2.circle(
+                    display_crop,
+                    (lx_s, ly_s),
+                    radius=r_out,
+                    color=(255, 255, 255),
+                    thickness=2,
+                )
+            else:
+                cv2.circle(
+                    display_crop,
+                    (lx_s, ly_s),
+                    radius=r_in,
+                    color=(0, 255, 255),
+                    thickness=-1,
+                )
+                cv2.circle(
+                    display_crop,
+                    (lx_s, ly_s),
+                    radius=r_out,
+                    color=(0, 150, 150),
+                    thickness=2,
+                )
+        else:
+            display_crop = np.zeros((vs, vs, 3), dtype=np.uint8)
+        return display_crop
 
     def _run_tracking_core(
         self,
-    ) -> tuple[int | None, int | None, int, np.ndarray]:
+    ) -> tuple[int | None, int | None, int, bool]:
         """
-        截屏 + SIFT + 匹配 + 构图。可在后台线程调用（勿碰 Tk）。
-        返回 (last_x, last_y, lost_frames, display_bgr)。
+        截屏 + SIFT + 匹配。可在后台线程调用（勿碰 Tk）。
+        返回 (last_x, last_y, lost_frames, is_inertial)；显示由 _compose_display_view / 插帧 负责。
         """
         lx, ly, lf = self.last_x, self.last_y, self.lost_frames
 
@@ -292,69 +385,10 @@ class SiftMapTrackerApp:
                 center_x, center_y = lx, ly
                 is_inertial = True
 
-        vs = int(config.VIEW_SIZE)
-        half = int(getattr(config, "VIEW_MAP_HALF_SIZE", vs // 2))
-        half = max(half, vs // 2)
+        return lx, ly, lf, is_inertial
 
-        if found and center_x is not None and center_y is not None:
-            y1 = max(0, center_y - half)
-            y2 = min(self.map_height, center_y + half)
-            x1 = max(0, center_x - half)
-            x2 = min(self.map_width, center_x + half)
-
-            display_crop = self.display_map_bgr[y1:y2, x1:x2].copy()
-            loc_x = center_x - x1
-            loc_y = center_y - y1
-
-            if not is_inertial:
-                cv2.circle(
-                    display_crop, (loc_x, loc_y), radius=10, color=(0, 0, 255), thickness=-1
-                )
-                cv2.circle(
-                    display_crop,
-                    (loc_x, loc_y),
-                    radius=12,
-                    color=(255, 255, 255),
-                    thickness=2,
-                )
-            else:
-                cv2.circle(
-                    display_crop,
-                    (loc_x, loc_y),
-                    radius=10,
-                    color=(0, 255, 255),
-                    thickness=-1,
-                )
-                cv2.circle(
-                    display_crop,
-                    (loc_x, loc_y),
-                    radius=12,
-                    color=(0, 150, 150),
-                    thickness=2,
-                )
-            ch, cw = display_crop.shape[:2]
-            if cw >= 1 and ch >= 1:
-                display_crop = cv2.resize(
-                    display_crop, (vs, vs), interpolation=cv2.INTER_AREA
-                )
-            else:
-                display_crop = np.zeros((vs, vs, 3), dtype=np.uint8)
-        else:
-            display_crop = np.zeros((vs, vs, 3), dtype=np.uint8)
-            cv2.putText(
-                display_crop,
-                "SIFT Searching...",
-                (70, 200),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.8,
-                (0, 255, 255),
-                2,
-            )
-
-        return lx, ly, lf, display_crop
-
-    def _update_fps_ema_and_overlay(self, display_bgr: np.ndarray) -> np.ndarray:
-        """按相邻两次 _apply_tracker_ui 的时间间隔估算 FPS（含异步排队），右上角叠加。"""
+    def _bump_track_fps_ema(self) -> None:
+        """仅在每次跟踪完成时调用，表示「定位更新率」而非界面重绘率。"""
         now = time.perf_counter()
         if self._fps_last_t is not None:
             dt = now - self._fps_last_t
@@ -366,6 +400,7 @@ class SiftMapTrackerApp:
                     self._fps_ema = 0.88 * self._fps_ema + 0.12 * inst
         self._fps_last_t = now
 
+    def _overlay_fps_on(self, display_bgr: np.ndarray) -> np.ndarray:
         if not getattr(config, "SIFT_SHOW_FPS", True):
             return display_bgr
 
@@ -374,19 +409,14 @@ class SiftMapTrackerApp:
         font = cv2.FONT_HERSHEY_SIMPLEX
         scale = max(0.45, min(0.72, w / 520.0))
         thickness = max(1, int(round(scale * 2)))
-        (tw, th), bl = cv2.getTextSize(label, font, scale, thickness)
-        pad = 5
-        x2 = w - pad
-        y1 = pad
-        x1 = x2 - tw - pad * 2
-        y2 = y1 + th + bl + pad * 2
-        cv2.rectangle(
-            display_bgr, (x1 - 2, y1 - 1), (x2 + 2, y2 + 1), (24, 24, 28), -1
-        )
+        (tw, th), _bl = cv2.getTextSize(label, font, scale, thickness)
+        pad = 6
+        org_x = w - tw - pad
+        org_y = pad + th
         cv2.putText(
             display_bgr,
             label,
-            (x1 + pad, y1 + th + pad - 1),
+            (org_x, org_y),
             font,
             scale,
             (160, 255, 200),
@@ -396,7 +426,7 @@ class SiftMapTrackerApp:
         return display_bgr
 
     def _apply_tracker_ui(self, display_bgr: np.ndarray) -> None:
-        display_bgr = self._update_fps_ema_and_overlay(display_bgr)
+        display_bgr = self._overlay_fps_on(display_bgr)
         display_rgb = cv2.cvtColor(display_bgr, cv2.COLOR_BGR2RGB)
         self.tk_image = ImageTk.PhotoImage(Image.fromarray(display_rgb))
         if self.image_on_canvas is None:
@@ -406,11 +436,74 @@ class SiftMapTrackerApp:
         else:
             self.canvas.itemconfig(self.image_on_canvas, image=self.tk_image)
 
+    def _snap_smooth_on_teleport(self, lx: int, ly: int) -> None:
+        tp = float(getattr(config, "SIFT_DISPLAY_TELEPORT_PX", 200.0))
+        if self._smooth_x is None or self._smooth_y is None:
+            self._smooth_x, self._smooth_y = float(lx), float(ly)
+            return
+        if math.hypot(float(lx) - self._smooth_x, float(ly) - self._smooth_y) > tp:
+            self._smooth_x, self._smooth_y = float(lx), float(ly)
+
+    def _on_tracker_result(
+        self, lx: int | None, ly: int | None, lf: int, is_inertial: bool
+    ) -> None:
+        self.last_x, self.last_y, self.lost_frames = lx, ly, lf
+        self._track_inertial = is_inertial
+        if lx is None or ly is None:
+            self._smooth_x = None
+            self._smooth_y = None
+        else:
+            self._snap_smooth_on_teleport(lx, ly)
+
+        self._bump_track_fps_ema()
+        interp_ms = int(getattr(config, "SIFT_DISPLAY_INTERP_MS", 0) or 0)
+        if interp_ms <= 0:
+            img = self._compose_display_view(
+                float(lx) if lx is not None else None,
+                float(ly) if ly is not None else None,
+                is_inertial,
+            )
+            self._apply_tracker_ui(img)
+
+    def _smooth_display_tick(self) -> None:
+        interp_ms = int(getattr(config, "SIFT_DISPLAY_INTERP_MS", 0) or 0)
+        if interp_ms <= 0:
+            return
+
+        lx, ly = self.last_x, self.last_y
+        tau = float(getattr(config, "SIFT_DISPLAY_SMOOTH_TAU", 0.11))
+        now = time.perf_counter()
+        if self._smooth_tick_last_t is None:
+            dt = interp_ms * 0.001
+        else:
+            dt = max(1e-4, now - self._smooth_tick_last_t)
+        self._smooth_tick_last_t = now
+
+        if lx is not None and ly is not None:
+            ax, ay = float(lx), float(ly)
+            if self._smooth_x is None or self._smooth_y is None:
+                self._smooth_x, self._smooth_y = ax, ay
+            else:
+                k = 1.0 - math.exp(-dt / tau) if tau > 1e-6 else 1.0
+                self._smooth_x += k * (ax - self._smooth_x)
+                self._smooth_y += k * (ay - self._smooth_y)
+
+            img = self._compose_display_view(
+                self._smooth_x, self._smooth_y, self._track_inertial
+            )
+            self._apply_tracker_ui(img)
+        else:
+            self._smooth_x = None
+            self._smooth_y = None
+            img = self._compose_display_view(None, None, False)
+            self._apply_tracker_ui(img)
+
+        self.root.after(interp_ms, self._smooth_display_tick)
+
     def _tracker_finish_async(self, pack: tuple) -> None:
         self._track_async_busy = False
-        lx, ly, lf, display_bgr = pack
-        self.last_x, self.last_y, self.lost_frames = lx, ly, lf
-        self._apply_tracker_ui(display_bgr)
+        lx, ly, lf, is_inertial = pack
+        self._on_tracker_result(lx, ly, lf, is_inertial)
         self.root.after(config.SIFT_REFRESH_RATE, self.update_tracker)
 
     def _tracker_async_error(self, err: BaseException) -> None:
@@ -436,9 +529,8 @@ class SiftMapTrackerApp:
             threading.Thread(target=worker, daemon=True).start()
         else:
             pack = self._run_tracking_core()
-            lx, ly, lf, display_bgr = pack
-            self.last_x, self.last_y, self.lost_frames = lx, ly, lf
-            self._apply_tracker_ui(display_bgr)
+            lx, ly, lf, is_inertial = pack
+            self._on_tracker_result(lx, ly, lf, is_inertial)
             self.root.after(config.SIFT_REFRESH_RATE, self.update_tracker)
 
 
