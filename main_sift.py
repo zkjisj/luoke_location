@@ -172,6 +172,8 @@ class SiftMapTrackerApp:
         self._smooth_x: float | None = None
         self._smooth_y: float | None = None
         self._smooth_tick_last_t: float | None = None
+        # 复用 PhotoImage + paste，避免每帧 new 导致 Tk 侧图像堆积、长时间运行内存耗尽闪退
+        self._ui_photo_ref: ImageTk.PhotoImage | None = None
 
         self.update_tracker()
         _di = int(getattr(config, "SIFT_DISPLAY_INTERP_MS", 0) or 0)
@@ -513,7 +515,13 @@ class SiftMapTrackerApp:
     def _apply_tracker_ui(self, display_bgr: np.ndarray) -> None:
         display_bgr = self._overlay_fps_on(display_bgr)
         display_rgb = cv2.cvtColor(display_bgr, cv2.COLOR_BGR2RGB)
-        self.tk_image = ImageTk.PhotoImage(Image.fromarray(display_rgb))
+        pil_img = Image.fromarray(display_rgb)
+        ref = self._ui_photo_ref
+        if ref is None:
+            self._ui_photo_ref = ImageTk.PhotoImage(pil_img)
+        else:
+            ref.paste(pil_img)
+        self.tk_image = self._ui_photo_ref
         if self.image_on_canvas is None:
             self.image_on_canvas = self.canvas.create_image(
                 0, 0, anchor=tk.NW, image=self.tk_image

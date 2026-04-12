@@ -69,6 +69,7 @@ class AIMapTrackerApp:
         self.canvas = tk.Canvas(root, width=config.VIEW_SIZE, height=config.VIEW_SIZE, bg='#2b2b2b')
         self.canvas.pack(fill=tk.BOTH, expand=True)
         self.image_on_canvas = None
+        self._ui_photo_ref = None
 
         self.update_tracker()
 
@@ -213,7 +214,12 @@ class AIMapTrackerApp:
         final_img.paste(pil_image,
                         (max(0, half_view - pil_image.width // 2), max(0, half_view - pil_image.height // 2)))
 
-        self.tk_image = ImageTk.PhotoImage(final_img)
+        ref = self._ui_photo_ref
+        if ref is None:
+            self._ui_photo_ref = ImageTk.PhotoImage(final_img)
+        else:
+            ref.paste(final_img)
+        self.tk_image = self._ui_photo_ref
 
         if self.image_on_canvas is None:
             self.image_on_canvas = self.canvas.create_image(0, 0, anchor=tk.NW, image=self.tk_image)
