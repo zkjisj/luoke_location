@@ -2,9 +2,34 @@
 # 游戏地图跟点助手 - 全局配置文件
 # ==========================================
 import os
+import sys
 
-_BASE = os.path.dirname(os.path.abspath(__file__))
-_OUT = os.path.join(_BASE, "out")
+
+def _runtime_base_dir() -> str:
+    """源码运行取当前文件目录；打包运行优先取 exe 所在目录。"""
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(os.path.abspath(sys.executable))
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+def _resolve_out_dir() -> str:
+    base = _runtime_base_dir()
+    candidate = os.path.join(base, "out")
+    if os.path.isdir(candidate):
+        return candidate
+
+    # 兼容 onefile 提取到临时目录、但资源放在 exe 同级目录的情况。
+    if getattr(sys, "frozen", False):
+        exe_dir = os.path.dirname(os.path.abspath(sys.executable))
+        exe_candidate = os.path.join(exe_dir, "out")
+        if os.path.isdir(exe_candidate):
+            return exe_candidate
+
+    return candidate
+
+
+_BASE = _runtime_base_dir()
+_OUT = _resolve_out_dir()
 # --- 1. 屏幕截图区域 (Minimap Region) ---
 # 正常启动会先倒计时再全屏框选小地图；仅在使用命令行 --no-pick 时才用下方 MINIMAP 数值
 PICK_SCREEN_COUNTDOWN_SEC = 5
@@ -24,7 +49,7 @@ VIEW_MAP_HALF_SIZE = 400
 
 # --- 3. 地图文件路径（须同宽同高）---
 # 搜索 / 特征匹配用底图
-LOGIC_MAP_PATH = os.path.join(_OUT, "rocom_base_z8.png")
+LOGIC_MAP_PATH = os.path.join(_OUT, "rocom_poi_overlay.png")
 # 悬浮窗显示用（采集点等 overlay）
 DISPLAY_MAP_PATH = os.path.join(_OUT, "rocom_caiji_overlay.png")
 # 可选：与逻辑图同尺寸的灰度掩膜，白=有地图、黑=忽略（可与 alpha 同时使用取交集）
@@ -45,8 +70,8 @@ MAX_LOST_FRAMES = 50                  # 最大容忍丢失帧数 (约 10 秒)
 # ==========================================
 SIFT_REFRESH_RATE = 33                # 毫秒；单帧算得慢时可改为 40～50
 SIFT_CLAHE_LIMIT = 3.0                # CLAHE 对比度增强极限 (用于榨取海水/草地纹理)
-SIFT_MATCH_RATIO = 0.9                # Lowe's Ratio 阈值 (越大越容易匹配，但错判率越高)
-SIFT_MIN_MATCH_COUNT = 5              # 判定成功所需的最低匹配点数
+SIFT_MATCH_RATIO = 0.86               # Lowe's Ratio 阈值 (适度收紧，减少草地/河面弱纹理误匹配)
+SIFT_MIN_MATCH_COUNT = 6              # 判定成功所需的最低匹配点数
 SIFT_RANSAC_THRESHOLD = 8.0           # 允许的空间误差阈值
 # 大地图 SIFT 最大锚点数（0=不限制）。锚点越多全图 FLANN 越慢；改后需删缓存重算 sift_anchors_*.npz
 SIFT_MAP_NFEATURES = 120000
@@ -58,29 +83,70 @@ SIFT_QUERY_MAX_EDGE = 224
 SIFT_MINIMAP_USE_INSCRIBED_ELLIPSE = True
 # 椭圆半轴 = 矩形半宽/半高 × 该系数（1.0 为贴边内接；略小于 1 可向内收一点）
 SIFT_MINIMAP_ELLIPSE_SCALE = 0.98
+# 从小地图中心额外挖掉一小块，尽量忽略角色箭头/朝向扇形等动态 UI
+SIFT_MINIMAP_CENTER_EXCLUDE_RADIUS_RATIO = 0.17
 # 稳态跟点：在上一帧地图坐标为中心、边长 2×半径 的正方形内取锚点做匹配（大图原始像素）。
 # 无上一帧、或连续未匹配达到 SIFT_FORCE_FULLMAP_LOST_FRAMES 时走全图锚点，不使用本半径。
 # 连续运动时帧间位移有限，不必过大；过大徒增 FLANN 负担。若常退回全图可把半径略调大。
 SIFT_LOCAL_SEARCH_RADIUS = 400
+SIFT_LOCAL_RADIUS_GROW_PER_LOST_FRAME = 28
+SIFT_LOCAL_SEARCH_MAX_RADIUS = 760
 SIFT_LOCAL_MIN_ANCHORS = 500
 # 局部模式下半径内锚点过多时随机子采样到此上限（0=不限制）。密集区 FLANN 仍可能较慢，建议 8000～15000
 SIFT_LOCAL_MAX_ANCHORS = 12000
+# 非全图重定位时，若本帧结果相对上一帧跳跃过大则直接拒绝，避免跨河/纯色区域横跳
+SIFT_LOCAL_MAX_JUMP = 170.0
+SIFT_LOCAL_JUMP_PER_LOST_FRAME = 36.0
+# 单应矩阵内点约束：好匹配点虽多，但若真正支持同一几何关系的点太少，也视为不可靠
+SIFT_MIN_INLIER_COUNT = 5
+SIFT_MIN_INLIER_RATIO = 0.40
 # FLANN 搜索精度/速度：checks 越小越快、略易漏匹配；可试 18～24
 SIFT_FLANN_CHECKS = 22
 SIFT_USE_BF_BELOW = 3500
 # --- 传送 / 大地图 UI：小地图暂时消失后的重定位 ---
 # 连续若干帧未匹配后，强制用全图锚点做 FLANN（不再以「旧坐标」为中心做局部匹配，避免传送后错配漂移）
 SIFT_FORCE_FULLMAP_LOST_FRAMES = 10
+# 传送时小地图会短暂全黑：检测到连续黑屏后，黑屏结束的第一帧直接触发全局重定位
+SIFT_TELEPORT_BLACKOUT_MIN_FRAMES = 2
+SIFT_TELEPORT_BLACKOUT_MAX_MEAN = 8.0
+SIFT_TELEPORT_BLACKOUT_MAX_STD = 8.0
+SIFT_TELEPORT_BLACKOUT_MAX_BRIGHT_RATIO = 0.012
+# 非传送但小地图长期被 UI 遮挡时：低特征帧持续一段时间后暂停计丢失；遮挡解除后立即强制全局重定位
+SIFT_UI_OCCLUDE_MAX_KP = 4
+SIFT_UI_OCCLUDE_MIN_FRAMES = 8
+SIFT_UI_OCCLUDE_RESUME_MIN_KP = 10
 # 连续未匹配超过此帧数则清空 last 坐标（不再显示惯性黄点），直到重新全局锁定
 SIFT_CLEAR_LOCK_AFTER_LOST_FRAMES = 45
 # 小地图 SIFT 点数低于此视为被 UI 遮挡/非游戏小地图，本帧不参与匹配
 SIFT_MINIMAP_MIN_KP = 8
 # 在「无可靠上一帧」或强制全图时，最低好匹配点数 = SIFT_MIN_MATCH_COUNT + 此项（抑制错配）
-SIFT_RELOC_EXTRA_MIN_MATCH = 4
+SIFT_RELOC_EXTRA_MIN_MATCH = 5
+# SIFT 弱纹理失效时，在上一帧附近做局部模板匹配兜底，帮助草地/宽河面保持连续定位
+SIFT_TEMPLATE_FALLBACK = True
+SIFT_TEMPLATE_RADIUS = 230.0
+SIFT_TEMPLATE_RADIUS_GROW_PER_LOST_FRAME = 32.0
+SIFT_TEMPLATE_MAX_RADIUS = 620.0
+SIFT_TEMPLATE_MIN_SCORE = 0.79
+SIFT_TEMPLATE_MIN_DELTA = 0.010
+SIFT_TEMPLATE_LOCAL_SCALE = 0.55
+SIFT_TEMPLATE_LOCAL_ANGLE_SPAN = 30.0
+SIFT_TEMPLATE_LOCAL_ANGLE_STEP = 10.0
+SIFT_TEMPLATE_GLOBAL_SCALE = 0.14
+SIFT_TEMPLATE_GLOBAL_MIN_SCORE = 0.73
+SIFT_TEMPLATE_GLOBAL_MIN_DELTA = 0.006
+SIFT_TEMPLATE_GLOBAL_ANGLE_SPAN = 180.0
+SIFT_TEMPLATE_GLOBAL_ANGLE_STEP = 15.0
+SIFT_TEMPLATE_GLOBAL_ANGLE_COARSE_STEP = 30.0
+SIFT_TEMPLATE_REFINE_MARGIN = 128
+SIFT_TEMPLATE_REFINE_ANGLE_SPAN = 6.0
+SIFT_TEMPLATE_REFINE_ANGLE_STEP = 2.0
+SIFT_TEMPLATE_PEAK_SUPPRESS_RADIUS = 18
+SIFT_TEMPLATE_JUMP_SCALE = 1.35
+SIFT_TEMPLATE_MIN_MASK_PIXELS = 80
 # 在悬浮窗画面右上角显示跟踪更新帧率（按相邻两次跟踪完成间隔估算，EMA 平滑）
 SIFT_SHOW_FPS = True
 # True 时记录 _run_tracking_core 各段耗时(ms)。为 False 时不会写文件、也不计时输出
-SIFT_TRACK_PROFILE = True
+SIFT_TRACK_PROFILE = False
 # 每完成多少次跟踪再写一行（第 1 次跟踪总会写一行，便于确认文件生效）
 SIFT_TRACK_PROFILE_EVERY = 25
 # 计时行追加写入此 txt（UTF-8）；None 或空字符串表示不写文件

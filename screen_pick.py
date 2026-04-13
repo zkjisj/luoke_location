@@ -190,11 +190,68 @@ def run_with_screen_pick(app_class: type, *, title_hint: str) -> None:
 
     args = parse_launch_args()
 
+    def _show_loading(parent: tk.Tk, text: str) -> tk.Toplevel:
+        win = tk.Toplevel(parent)
+        win.title("正在启动")
+        win.attributes("-topmost", True)
+        win.resizable(False, False)
+        win.geometry("420x120+80+80")
+        lbl = tk.Label(
+            win,
+            text=text,
+            justify=tk.CENTER,
+            font=("Microsoft YaHei UI", 10),
+            padx=16,
+            pady=16,
+        )
+        lbl.pack(fill=tk.BOTH, expand=True)
+        tip = tk.Label(
+            win,
+            text="首次运行若需重建大地图锚点，可能需要等待较长时间。",
+            justify=tk.CENTER,
+            font=("Microsoft YaHei UI", 9),
+            padx=8,
+            pady=0,
+        )
+        tip.pack(fill=tk.X)
+        win.update_idletasks()
+        win.deiconify()
+        win.lift()
+        return win
+
+    def _start_app(root: tk.Tk, minimap_region) -> None:
+        loading = _show_loading(root, "正在加载地图、锚点和悬浮窗，请稍候...")
+        root.update_idletasks()
+        try:
+            root.title(title_hint)
+            root._tracker_app = app_class(root, minimap_region=minimap_region)  # type: ignore[attr-defined]
+        except BaseException as exc:
+            try:
+                loading.destroy()
+            except tk.TclError:
+                pass
+            messagebox.showerror(
+                "启动失败",
+                f"程序启动失败：\n{exc}",
+            )
+            try:
+                root.destroy()
+            except tk.TclError:
+                pass
+            raise SystemExit(1) from exc
+        try:
+            loading.destroy()
+        except tk.TclError:
+            pass
+        root.deiconify()
+        root.lift()
+
     if args.no_pick:
         _win32_set_per_monitor_dpi_aware()
         root = tk.Tk()
-        root.title(title_hint)
-        root._tracker_app = app_class(root, minimap_region=None)  # type: ignore[attr-defined]
+        root.withdraw()
+        root.attributes("-topmost", True)
+        _start_app(root, minimap_region=None)
         root.mainloop()
         return
 
@@ -205,9 +262,7 @@ def run_with_screen_pick(app_class: type, *, title_hint: str) -> None:
 
     def on_done(left: int, top: int, w: int, h: int) -> None:
         mreg = {"top": top, "left": left, "width": w, "height": h}
-        root.deiconify()
-        root.title(title_hint)
-        root._tracker_app = app_class(root, minimap_region=mreg)  # type: ignore[attr-defined]
+        _start_app(root, minimap_region=mreg)
 
     def on_cancel() -> None:
         try:

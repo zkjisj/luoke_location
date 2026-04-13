@@ -257,3 +257,638 @@
 
 [SIFT profile] --- session 2026-04-13 01:00:36 ---
 [SIFT profile] total=1651.0ms grab=10.7 prep=0.5 sift_q=7.6 train=0.0 knn(flann)=1578.3 ratio=0.1 pose=53.9 | nq=316 nt=119504
+
+[SIFT profile] --- session 2026-04-13 11:04:40 ---
+[SIFT profile] total=1492.4ms grab=19.8 prep=7.2 sift_q=19.4 train=0.0 knn(flann)=1439.0 ratio=0.2 pose=6.6 | nq=314 nt=119506
+[SIFT profile] total=24.5ms grab=9.6 prep=0.3 sift_q=8.7 train=1.7 knn(bf)=2.0 ratio=0.2 pose=2.0 | nq=313 nt=2100
+[SIFT profile] total=21.9ms grab=9.6 prep=0.5 sift_q=7.5 train=1.6 knn(bf)=1.2 ratio=0.1 pose=1.4 | nq=312 nt=2100
+[SIFT profile] total=25.3ms grab=10.8 prep=0.9 sift_q=9.0 train=1.6 knn(bf)=1.6 ratio=0.1 pose=1.2 | nq=315 nt=2100
+[SIFT profile] total=15.6ms grab=5.0 prep=0.4 sift_q=5.6 train=1.1 knn(bf)=2.0 ratio=0.1 pose=1.3 | nq=320 nt=2100
+[SIFT profile] total=71.6ms grab=7.8 prep=0.6 sift_q=10.6 train=1.4 knn(bf)=1.6 ratio=0.1 pose=49.5 | nq=293 nt=1944
+[SIFT profile] total=29.4ms grab=9.9 prep=1.2 sift_q=10.3 train=2.1 knn(bf)=3.1 ratio=0.1 pose=2.7 | nq=300 nt=2100
+[SIFT profile] total=27.1ms grab=9.9 prep=0.5 sift_q=10.8 train=2.9 knn(bf)=1.3 ratio=0.1 pose=1.6 | nq=293 nt=1949
+[SIFT profile] total=23.8ms grab=4.0 prep=1.0 sift_q=11.7 train=2.7 knn(bf)=2.0 ratio=0.1 pose=2.2 | nq=287 nt=1917
+[SIFT profile] total=33.8ms grab=12.0 prep=1.3 sift_q=11.2 train=3.0 knn(bf)=2.2 ratio=0.3 pose=3.7 | nq=299 nt=1846
+[SIFT profile] total=20.3ms grab=8.7 prep=0.4 sift_q=6.3 train=1.4 knn(bf)=1.4 ratio=0.1 pose=2.1 | nq=300 nt=1747
+[SIFT profile] total=25.3ms grab=8.1 prep=0.6 sift_q=6.3 train=2.2 knn(bf)=1.1 ratio=0.1 pose=6.9 | nq=297 nt=1567
+[SIFT profile] total=26.6ms grab=6.6 prep=0.8 sift_q=7.5 train=1.8 knn(bf)=1.2 ratio=0.1 pose=8.6 | nq=239 nt=1336
+[SIFT profile] total=26.6ms grab=9.4 prep=0.5 sift_q=5.8 train=1.7 knn(bf)=0.8 ratio=0.1 pose=8.3 | nq=176 nt=1143
+[SIFT profile] total=105.9ms grab=11.6 prep=0.7 sift_q=10.2 train=3.0 knn(bf)=0.7 ratio=0.0 pose=79.6 | nq=169 nt=1059
+[SIFT profile] total=27.7ms grab=11.0 prep=0.7 sift_q=8.8 train=2.2 knn(bf)=0.5 ratio=0.4 pose=4.0 | nq=114 nt=765
+[SIFT profile] total=27.6ms grab=12.1 prep=0.7 sift_q=3.7 train=2.1 knn(bf)=0.5 ratio=0.0 pose=8.3 | nq=101 nt=923
+[SIFT profile] total=2246.2ms grab=4.6 prep=0.7 sift_q=6.2 train=0.0 knn(flann)=2160.9 ratio=0.1 pose=73.6 | nq=185 nt=119506
+[SIFT profile] total=17.3ms grab=11.5 prep=0.7 sift_q=5.2 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=16.0ms grab=8.5 prep=1.1 sift_q=6.4 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=11.9ms grab=8.9 prep=0.4 sift_q=2.6 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=2282.5ms grab=10.7 prep=1.0 sift_q=13.3 train=0.0 knn(flann)=2232.1 ratio=0.1 pose=25.2 | nq=175 nt=119506
+[SIFT profile] total=20.1ms grab=9.1 prep=0.6 sift_q=6.6 train=3.6 knn(bf)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=2485
+[SIFT profile] total=14.4ms grab=7.6 prep=0.8 sift_q=5.9 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=15.2ms grab=12.2 prep=0.4 sift_q=2.6 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=13.6ms grab=9.8 prep=0.7 sift_q=3.0 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=14.0ms grab=7.2 prep=0.6 sift_q=6.1 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=26.9ms grab=13.5 prep=0.9 sift_q=7.8 train=1.4 knn(bf)=1.2 ratio=0.1 pose=1.9 | nq=241 nt=1280
+[SIFT profile] total=27.3ms grab=10.7 prep=1.2 sift_q=8.2 train=2.1 knn(bf)=1.5 ratio=0.1 pose=3.4 | nq=251 nt=1280
+[SIFT profile] total=21.2ms grab=6.8 prep=0.5 sift_q=7.2 train=2.1 knn(bf)=1.6 ratio=0.2 pose=2.9 | nq=260 nt=1281
+[SIFT profile] total=9.3ms grab=4.1 prep=0.6 sift_q=3.7 train=0.9 knn(bf)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=1293
+[SIFT profile] total=10.2ms grab=5.8 prep=0.6 sift_q=3.8 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=19.9ms grab=11.6 prep=0.6 sift_q=7.7 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=11.0ms grab=7.9 prep=0.4 sift_q=2.7 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=24.5ms grab=7.9 prep=1.1 sift_q=9.8 train=1.8 knn(bf)=2.2 ratio=0.1 pose=1.5 | nq=334 nt=2100
+[SIFT profile] total=17.4ms grab=5.6 prep=0.7 sift_q=6.8 train=1.4 knn(bf)=1.6 ratio=0.1 pose=1.2 | nq=333 nt=2042
+[SIFT profile] total=15.9ms grab=5.2 prep=0.4 sift_q=5.0 train=1.1 knn(bf)=1.4 ratio=0.1 pose=2.7 | nq=323 nt=1783
+[SIFT profile] total=22.3ms grab=8.6 prep=0.7 sift_q=7.3 train=1.4 knn(bf)=1.2 ratio=0.1 pose=3.0 | nq=280 nt=1614
+[SIFT profile] total=28.3ms grab=7.2 prep=0.6 sift_q=9.6 train=2.1 knn(bf)=1.3 ratio=0.1 pose=7.5 | nq=203 nt=1461
+[SIFT profile] total=22.7ms grab=6.7 prep=0.4 sift_q=9.0 train=1.2 knn(bf)=0.8 ratio=0.0 pose=4.6 | nq=162 nt=1437
+[SIFT profile] total=26.0ms grab=5.8 prep=0.6 sift_q=8.6 train=1.6 knn(bf)=0.9 ratio=0.1 pose=8.4 | nq=211 nt=1438
+[SIFT profile] total=27.9ms grab=10.4 prep=0.6 sift_q=7.1 train=1.5 knn(bf)=0.9 ratio=0.1 pose=7.2 | nq=210 nt=1437
+[SIFT profile] total=27.0ms grab=13.7 prep=0.5 sift_q=4.8 train=1.2 knn(bf)=0.7 ratio=0.0 pose=6.0 | nq=214 nt=1437
+[SIFT profile] total=20.1ms grab=6.5 prep=0.5 sift_q=3.8 train=1.2 knn(bf)=1.0 ratio=0.1 pose=7.1 | nq=211 nt=1437
+[SIFT profile] total=22.7ms grab=9.3 prep=0.4 sift_q=3.8 train=1.4 knn(bf)=0.8 ratio=0.1 pose=6.9 | nq=213 nt=1438
+[SIFT profile] total=2281.6ms grab=7.1 prep=1.4 sift_q=7.7 train=0.0 knn(flann)=2177.0 ratio=0.0 pose=88.2 | nq=210 nt=119506
+
+[SIFT profile] --- session 2026-04-13 11:12:52 ---
+[SIFT profile] total=317.9ms grab=14.4 prep=0.9 sift_q=16.1 train=7.9 knn(flann)=227.3 ratio=0.1 pose=51.1 | nq=259 nt=16000
+[SIFT profile] total=296.2ms grab=9.5 prep=0.4 sift_q=7.4 train=5.5 knn(flann)=217.9 ratio=0.1 pose=55.5 | nq=256 nt=16000
+[SIFT profile] total=385.4ms grab=6.1 prep=0.3 sift_q=10.5 train=5.2 knn(flann)=293.1 ratio=0.1 pose=70.0 | nq=268 nt=16000
+[SIFT profile] total=363.6ms grab=15.8 prep=2.4 sift_q=14.0 train=8.6 knn(flann)=262.7 ratio=0.1 pose=60.0 | nq=320 nt=16000
+[SIFT profile] total=281.9ms grab=4.6 prep=0.4 sift_q=5.2 train=6.7 knn(flann)=204.0 ratio=0.1 pose=60.9 | nq=266 nt=16000
+
+[SIFT profile] --- session 2026-04-13 11:19:48 ---
+[SIFT profile] total=1680.2ms grab=7.5 prep=0.6 sift_q=9.8 train=0.0 knn(flann)=1607.8 ratio=0.1 pose=54.3 | nq=270 nt=119506
+[SIFT profile] total=15.9ms grab=7.8 prep=0.7 sift_q=7.3 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=18.1ms grab=7.7 prep=0.7 sift_q=9.7 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=12.2ms grab=8.6 prep=0.4 sift_q=3.1 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=22.5ms grab=12.9 prep=1.0 sift_q=8.5 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+
+[SIFT profile] --- session 2026-04-13 11:24:07 ---
+[SIFT profile] total=1154.8ms grab=4.7 prep=0.5 sift_q=7.7 train=15.4 knn(flann)=1076.9 ratio=0.1 pose=49.5 | nq=253 nt=52000
+
+[SIFT profile] --- session 2026-04-13 11:28:56 ---
+[SIFT profile] total=1644.9ms grab=11.0 prep=0.4 sift_q=9.9 train=0.0 knn(flann)=1568.8 ratio=0.1 pose=54.6 | nq=259 nt=119506
+[SIFT profile] total=75.1ms grab=8.7 prep=0.7 sift_q=6.4 train=1.4 knn(bf)=2.1 ratio=0.1 pose=55.9 | nq=264 nt=3092
+[SIFT profile] total=65.9ms grab=5.5 prep=0.4 sift_q=5.4 train=1.3 knn(bf)=1.1 ratio=0.1 pose=52.2 | nq=264 nt=1804
+[SIFT profile] total=81.6ms grab=7.7 prep=0.6 sift_q=12.9 train=2.0 knn(bf)=2.1 ratio=0.2 pose=56.1 | nq=261 nt=1804
+[SIFT profile] total=79.0ms grab=4.8 prep=0.4 sift_q=8.1 train=2.5 knn(bf)=3.3 ratio=0.2 pose=59.7 | nq=256 nt=3105
+[SIFT profile] total=67.8ms grab=5.1 prep=1.0 sift_q=6.8 train=1.6 knn(bf)=1.7 ratio=0.1 pose=51.5 | nq=265 nt=3105
+[SIFT profile] total=80.1ms grab=9.8 prep=0.4 sift_q=8.7 train=3.1 knn(bf)=1.5 ratio=0.1 pose=56.3 | nq=261 nt=3102
+[SIFT profile] total=66.3ms grab=8.3 prep=0.5 sift_q=5.3 train=1.9 knn(bf)=1.8 ratio=0.1 pose=48.4 | nq=260 nt=3100
+[SIFT profile] total=74.7ms grab=6.9 prep=0.4 sift_q=6.0 train=2.2 knn(bf)=2.1 ratio=0.1 pose=56.9 | nq=253 nt=1804
+[SIFT profile] total=78.8ms grab=10.3 prep=0.6 sift_q=7.4 train=2.6 knn(bf)=2.3 ratio=0.1 pose=55.5 | nq=261 nt=3099
+[SIFT profile] total=59.4ms grab=4.7 prep=0.4 sift_q=13.0 train=2.0 knn(bf)=4.0 ratio=0.1 pose=35.2 | nq=245 nt=1860
+[SIFT profile] total=29.0ms grab=9.3 prep=0.6 sift_q=7.7 train=2.5 knn(bf)=1.9 ratio=0.1 pose=6.9 | nq=261 nt=1936
+[SIFT profile] total=30.8ms grab=10.8 prep=0.6 sift_q=5.7 train=1.4 knn(bf)=1.3 ratio=0.1 pose=10.8 | nq=265 nt=1936
+[SIFT profile] total=34.1ms grab=8.9 prep=0.5 sift_q=7.5 train=1.6 knn(bf)=1.1 ratio=0.1 pose=14.4 | nq=255 nt=1950
+[SIFT profile] total=41.0ms grab=9.1 prep=0.5 sift_q=16.3 train=1.0 knn(bf)=1.3 ratio=0.1 pose=12.6 | nq=243 nt=1653
+[SIFT profile] total=29.8ms grab=6.5 prep=0.8 sift_q=7.6 train=1.6 knn(bf)=0.8 ratio=0.1 pose=12.3 | nq=185 nt=1400
+[SIFT profile] total=53.3ms grab=10.2 prep=0.9 sift_q=16.1 train=2.7 knn(bf)=0.6 ratio=0.1 pose=22.6 | nq=199 nt=1170
+[SIFT profile] total=82.4ms grab=7.5 prep=0.4 sift_q=8.5 train=1.7 knn(bf)=1.0 ratio=0.1 pose=63.2 | nq=188 nt=1168
+[SIFT profile] total=97.6ms grab=15.0 prep=0.7 sift_q=9.5 train=2.3 knn(bf)=1.2 ratio=0.1 pose=68.9 | nq=150 nt=1720
+[SIFT profile] total=159.6ms grab=11.6 prep=0.8 sift_q=5.2 train=2.9 knn(flann)=63.6 ratio=0.0 pose=75.4 | nq=137 nt=3715
+[SIFT profile] total=75.0ms grab=14.8 prep=1.3 sift_q=38.2 train=1.6 knn(bf)=1.7 ratio=0.2 pose=17.1 | nq=192 nt=1120
+[SIFT profile] total=83.3ms grab=4.5 prep=0.6 sift_q=11.6 train=2.3 knn(bf)=1.1 ratio=0.1 pose=63.0 | nq=219 nt=1375
+[SIFT profile] total=51.2ms grab=9.3 prep=0.4 sift_q=8.1 train=2.5 knn(bf)=2.2 ratio=0.1 pose=28.6 | nq=261 nt=1535
+[SIFT profile] total=32.8ms grab=11.1 prep=0.8 sift_q=10.3 train=2.1 knn(bf)=2.2 ratio=0.1 pose=6.1 | nq=309 nt=1852
+[SIFT profile] total=29.0ms grab=7.7 prep=0.9 sift_q=12.0 train=1.9 knn(bf)=4.0 ratio=0.1 pose=2.4 | nq=343 nt=2156
+[SIFT profile] total=29.9ms grab=9.8 prep=0.6 sift_q=13.7 train=1.7 knn(bf)=1.5 ratio=0.1 pose=2.5 | nq=351 nt=2250
+[SIFT profile] total=35.5ms grab=10.3 prep=0.7 sift_q=15.7 train=2.1 knn(bf)=3.7 ratio=0.2 pose=2.7 | nq=341 nt=2357
+[SIFT profile] total=22.0ms grab=6.7 prep=0.6 sift_q=7.1 train=1.9 knn(bf)=2.4 ratio=0.1 pose=3.1 | nq=342 nt=2509
+[SIFT profile] total=22.4ms grab=5.3 prep=0.7 sift_q=8.7 train=2.9 knn(bf)=2.8 ratio=0.1 pose=1.8 | nq=344 nt=2518
+[SIFT profile] total=30.3ms grab=10.6 prep=0.7 sift_q=10.9 train=2.5 knn(bf)=2.7 ratio=0.1 pose=2.7 | nq=336 nt=2300
+[SIFT profile] total=22.0ms grab=6.5 prep=1.3 sift_q=7.6 train=1.5 knn(bf)=1.9 ratio=0.1 pose=3.1 | nq=353 nt=2143
+[SIFT profile] total=25.0ms grab=7.2 prep=0.9 sift_q=9.9 train=2.1 knn(bf)=2.2 ratio=0.1 pose=2.5 | nq=345 nt=2002
+[SIFT profile] total=27.2ms grab=11.2 prep=0.7 sift_q=8.2 train=1.8 knn(bf)=2.3 ratio=0.1 pose=2.8 | nq=332 nt=1908
+[SIFT profile] total=24.1ms grab=10.0 prep=0.6 sift_q=7.3 train=1.4 knn(bf)=1.0 ratio=0.1 pose=3.6 | nq=282 nt=1671
+[SIFT profile] total=30.3ms grab=9.3 prep=0.6 sift_q=9.8 train=2.8 knn(bf)=2.1 ratio=0.2 pose=5.5 | nq=281 nt=1477
+[SIFT profile] total=31.7ms grab=9.5 prep=0.8 sift_q=7.9 train=2.1 knn(bf)=1.2 ratio=0.1 pose=10.0 | nq=267 nt=1406
+[SIFT profile] total=35.6ms grab=6.4 prep=0.4 sift_q=6.7 train=1.8 knn(bf)=10.3 ratio=0.1 pose=9.9 | nq=236 nt=1406
+[SIFT profile] total=32.7ms grab=8.4 prep=0.7 sift_q=9.0 train=1.2 knn(bf)=1.0 ratio=0.1 pose=12.4 | nq=260 nt=1406
+[SIFT profile] total=36.5ms grab=10.2 prep=0.9 sift_q=12.2 train=2.0 knn(bf)=1.1 ratio=0.1 pose=10.0 | nq=259 nt=1406
+[SIFT profile] total=77.5ms grab=7.3 prep=0.4 sift_q=4.4 train=1.6 knn(bf)=1.6 ratio=0.2 pose=61.9 | nq=261 nt=1174
+[SIFT profile] total=37.5ms grab=7.8 prep=1.1 sift_q=11.3 train=1.8 knn(bf)=1.3 ratio=0.1 pose=14.2 | nq=254 nt=1406
+[SIFT profile] total=61.6ms grab=4.8 prep=0.7 sift_q=6.2 train=1.1 knn(bf)=0.7 ratio=0.1 pose=48.0 | nq=191 nt=918
+[SIFT profile] total=11.6ms grab=7.0 prep=0.6 sift_q=2.7 train=1.3 knn(bf)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=1423
+[SIFT profile] total=12.9ms grab=7.6 prep=0.6 sift_q=4.6 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=13.7ms grab=9.4 prep=0.6 sift_q=3.6 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=10.5ms grab=7.0 prep=0.6 sift_q=2.9 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=11.1ms grab=7.2 prep=0.7 sift_q=3.2 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=20.2ms grab=13.0 prep=0.7 sift_q=6.5 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 | nq=0 nt=119506
+[SIFT profile] total=117.3ms grab=6.4 prep=0.7 sift_q=11.1 train=2.1 knn(bf)=2.5 ratio=0.2 pose=94.4 | nq=291 nt=2053
+[SIFT profile] total=27.3ms grab=7.2 prep=0.9 sift_q=10.7 train=1.7 knn(bf)=1.7 ratio=0.1 pose=5.0 | nq=307 nt=1671
+[SIFT profile] total=35.2ms grab=8.5 prep=0.9 sift_q=17.4 train=1.8 knn(bf)=1.9 ratio=0.1 pose=4.5 | nq=306 nt=1632
+[SIFT profile] total=30.8ms grab=6.5 prep=0.6 sift_q=16.8 train=1.1 knn(bf)=1.4 ratio=0.2 pose=4.2 | nq=277 nt=1619
+[SIFT profile] total=26.8ms grab=7.0 prep=0.8 sift_q=7.6 train=2.3 knn(bf)=2.2 ratio=0.1 pose=6.8 | nq=288 nt=1665
+[SIFT profile] total=20.5ms grab=6.5 prep=0.7 sift_q=7.8 train=1.2 knn(bf)=1.2 ratio=0.1 pose=3.0 | nq=318 nt=1585
+[SIFT profile] total=41.6ms grab=9.7 prep=0.7 sift_q=13.5 train=2.0 knn(bf)=1.6 ratio=0.1 pose=14.0 | nq=284 nt=1500
+[SIFT profile] total=33.4ms grab=8.6 prep=0.5 sift_q=8.9 train=1.7 knn(bf)=1.2 ratio=0.1 pose=12.5 | nq=279 nt=1560
+[SIFT profile] total=31.8ms grab=3.8 prep=0.8 sift_q=15.6 train=2.2 knn(bf)=1.8 ratio=0.1 pose=7.4 | nq=268 nt=1448
+[SIFT profile] total=45.5ms grab=11.7 prep=0.8 sift_q=12.4 train=1.9 knn(bf)=1.6 ratio=0.1 pose=17.1 | nq=227 nt=1310
+[SIFT profile] total=27.9ms grab=8.3 prep=0.7 sift_q=8.9 train=1.3 knn(bf)=1.0 ratio=0.1 pose=7.6 | nq=209 nt=1234
+[SIFT profile] total=29.1ms grab=4.7 prep=0.8 sift_q=12.3 train=2.8 knn(bf)=0.7 ratio=0.1 pose=7.6 | nq=235 nt=1118
+[SIFT profile] total=42.9ms grab=6.7 prep=0.4 sift_q=3.9 train=1.5 knn(bf)=0.6 ratio=0.1 pose=29.7 | nq=219 nt=1089
+[SIFT profile] total=103.1ms grab=5.0 prep=0.8 sift_q=11.4 train=1.6 knn(bf)=0.9 ratio=0.0 pose=83.2 | nq=207 nt=1516
+[SIFT profile] total=148.7ms grab=13.0 prep=2.9 sift_q=22.7 train=3.2 knn(bf)=3.2 ratio=0.1 pose=103.5 | nq=232 nt=1514
+[SIFT profile] total=91.1ms grab=6.0 prep=1.2 sift_q=5.8 train=1.5 knn(bf)=1.8 ratio=0.1 pose=74.7 | nq=202 nt=2556
+[SIFT profile] total=93.4ms grab=10.1 prep=0.6 sift_q=8.6 train=1.5 knn(bf)=1.1 ratio=0.1 pose=71.4 | nq=182 nt=2575
+[SIFT profile] total=107.5ms grab=10.9 prep=0.7 sift_q=8.3 train=1.9 knn(bf)=1.5 ratio=0.1 pose=84.1 | nq=180 nt=2681
+[SIFT profile] total=88.9ms grab=6.3 prep=0.7 sift_q=5.3 train=1.0 knn(bf)=0.9 ratio=0.1 pose=74.6 | nq=220 nt=1486
+[SIFT profile] total=121.5ms grab=10.4 prep=0.9 sift_q=12.4 train=2.0 knn(bf)=2.5 ratio=0.1 pose=93.1 | nq=221 nt=1343
+[SIFT profile] total=102.4ms grab=6.7 prep=0.5 sift_q=4.9 train=1.3 knn(bf)=1.2 ratio=0.1 pose=87.7 | nq=211 nt=1397
+[SIFT profile] total=99.2ms grab=6.6 prep=0.7 sift_q=8.6 train=2.0 knn(bf)=1.0 ratio=0.1 pose=80.1 | nq=223 nt=1512
+
+[SIFT profile] --- session 2026-04-13 11:43:08 ---
+[SIFT profile] total=1345.6ms grab=8.4 prep=0.4 sift_q=7.2 train=0.0 knn(flann)=1286.5 ratio=0.0 pose=43.1 tmpl=0.0 | nq=218 nt=119506
+[SIFT profile] total=12.3ms grab=6.8 prep=0.4 sift_q=5.1 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=10.1ms grab=4.7 prep=0.8 sift_q=4.5 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=8.3ms grab=3.7 prep=0.4 sift_q=4.2 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=18.6ms grab=14.7 prep=0.4 sift_q=3.4 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=13.0ms grab=6.5 prep=0.7 sift_q=5.8 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=18.3ms grab=10.9 prep=0.8 sift_q=6.6 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=14.6ms grab=7.6 prep=0.7 sift_q=6.3 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=19.7ms grab=11.5 prep=0.6 sift_q=7.6 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=17.7ms grab=10.1 prep=0.7 sift_q=6.8 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=2257.0ms grab=10.1 prep=1.7 sift_q=15.2 train=0.0 knn(flann)=2154.0 ratio=0.1 pose=75.8 tmpl=0.0 | nq=214 nt=119506
+[SIFT profile] total=8.0ms grab=5.3 prep=0.4 sift_q=2.4 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=15.6ms grab=8.6 prep=0.7 sift_q=6.3 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=16.3ms grab=8.3 prep=0.7 sift_q=7.3 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=0.0 | nq=0 nt=119506
+[SIFT profile] total=25.2ms grab=7.1 prep=1.4 sift_q=10.9 train=1.9 knn(bf)=2.3 ratio=0.1 pose=1.4 tmpl=0.0 | nq=356 nt=2103
+[SIFT profile] total=28.2ms grab=10.4 prep=1.0 sift_q=9.2 train=2.5 knn(bf)=2.5 ratio=0.2 pose=2.3 tmpl=0.0 | nq=357 nt=2103
+[SIFT profile] total=35.0ms grab=11.6 prep=0.7 sift_q=14.6 train=2.6 knn(bf)=2.7 ratio=0.2 pose=2.5 tmpl=0.0 | nq=357 nt=2103
+[SIFT profile] total=39.1ms grab=13.8 prep=1.1 sift_q=16.0 train=2.4 knn(bf)=4.1 ratio=0.2 pose=1.4 tmpl=0.0 | nq=320 nt=2067
+[SIFT profile] total=23.7ms grab=9.0 prep=0.7 sift_q=8.7 train=1.8 knn(bf)=1.6 ratio=0.1 pose=1.7 tmpl=0.0 | nq=332 nt=1819
+[SIFT profile] total=34.3ms grab=9.7 prep=0.9 sift_q=10.2 train=2.5 knn(bf)=1.6 ratio=0.2 pose=9.2 tmpl=0.0 | nq=290 nt=1633
+[SIFT profile] total=28.5ms grab=11.6 prep=0.4 sift_q=10.1 train=1.9 knn(bf)=1.2 ratio=0.1 pose=3.1 tmpl=0.0 | nq=222 nt=1412
+[SIFT profile] total=135.3ms grab=10.4 prep=0.7 sift_q=7.1 train=1.8 knn(bf)=1.4 ratio=0.1 pose=16.1 tmpl=97.6 | nq=202 nt=2832
+[SIFT profile] total=138.5ms grab=9.8 prep=0.5 sift_q=12.4 train=1.8 knn(bf)=0.7 ratio=0.0 pose=17.6 tmpl=95.6 | nq=90 nt=1016
+[SIFT profile] total=32.0ms grab=9.7 prep=1.6 sift_q=13.0 train=3.0 knn(bf)=1.9 ratio=0.2 pose=2.6 tmpl=0.0 | nq=320 nt=1813
+[SIFT profile] total=37.9ms grab=9.3 prep=0.9 sift_q=21.2 train=2.6 knn(bf)=2.5 ratio=0.1 pose=1.3 tmpl=0.0 | nq=311 nt=1814
+[SIFT profile] total=24.9ms grab=10.0 prep=0.4 sift_q=9.0 train=1.5 knn(bf)=1.4 ratio=0.1 pose=2.5 tmpl=0.0 | nq=292 nt=1634
+[SIFT profile] total=23.3ms grab=8.6 prep=0.7 sift_q=5.5 train=1.0 knn(bf)=0.8 ratio=0.0 pose=6.6 tmpl=0.0 | nq=194 nt=1112
+[SIFT profile] total=2602.3ms grab=7.6 prep=0.7 sift_q=7.6 train=0.0 knn(flann)=2366.4 ratio=0.0 pose=27.5 tmpl=192.4 | nq=117 nt=119506
+[SIFT profile] total=39.8ms grab=11.8 prep=0.8 sift_q=18.4 train=1.9 knn(bf)=3.2 ratio=0.2 pose=3.4 tmpl=0.0 | nq=319 nt=1415
+[SIFT profile] total=249.9ms grab=8.5 prep=0.4 sift_q=10.0 train=2.8 knn(bf)=2.0 ratio=0.2 pose=49.8 tmpl=176.2 | nq=295 nt=2439
+[SIFT profile] total=26.8ms grab=7.5 prep=0.4 sift_q=8.3 train=3.1 knn(bf)=2.7 ratio=0.2 pose=4.5 tmpl=0.0 | nq=269 nt=1323
+[SIFT profile] total=28.8ms grab=7.8 prep=0.8 sift_q=13.4 train=1.5 knn(bf)=2.5 ratio=0.1 pose=2.5 tmpl=0.0 | nq=290 nt=1446
+[SIFT profile] total=251.5ms grab=13.2 prep=1.3 sift_q=15.6 train=4.1 knn(bf)=2.6 ratio=0.1 pose=91.7 tmpl=122.9 | nq=207 nt=2474
+[SIFT profile] total=27.6ms grab=10.4 prep=0.7 sift_q=10.5 train=1.9 knn(bf)=1.6 ratio=0.1 pose=2.3 tmpl=0.0 | nq=302 nt=1554
+[SIFT profile] total=24.4ms grab=7.8 prep=0.4 sift_q=9.9 train=1.6 knn(bf)=1.3 ratio=0.1 pose=3.2 tmpl=0.0 | nq=257 nt=1548
+[SIFT profile] total=23.5ms grab=9.1 prep=1.1 sift_q=8.0 train=1.6 knn(bf)=1.1 ratio=0.1 pose=2.5 tmpl=0.0 | nq=285 nt=1537
+[SIFT profile] total=18.4ms grab=6.7 prep=0.7 sift_q=7.2 train=1.1 knn(bf)=1.2 ratio=0.1 pose=1.4 tmpl=0.0 | nq=292 nt=1521
+[SIFT profile] total=24.0ms grab=10.4 prep=0.9 sift_q=6.9 train=1.2 knn(bf)=1.7 ratio=0.1 pose=2.7 tmpl=0.0 | nq=284 nt=1509
+[SIFT profile] total=21.5ms grab=5.8 prep=0.8 sift_q=6.2 train=1.8 knn(bf)=1.2 ratio=0.1 pose=5.6 tmpl=0.0 | nq=266 nt=1527
+[SIFT profile] total=41.5ms grab=10.6 prep=1.2 sift_q=19.0 train=2.9 knn(bf)=1.7 ratio=0.2 pose=5.9 tmpl=0.0 | nq=285 nt=1561
+[SIFT profile] total=24.7ms grab=7.9 prep=1.3 sift_q=10.1 train=1.3 knn(bf)=1.4 ratio=0.1 pose=2.6 tmpl=0.0 | nq=278 nt=1533
+[SIFT profile] total=22.8ms grab=7.9 prep=0.6 sift_q=5.9 train=1.3 knn(bf)=1.2 ratio=0.1 pose=5.8 tmpl=0.0 | nq=270 nt=1398
+[SIFT profile] total=22.2ms grab=5.5 prep=0.8 sift_q=10.1 train=1.4 knn(bf)=1.3 ratio=0.1 pose=3.1 tmpl=0.0 | nq=285 nt=1331
+[SIFT profile] total=33.5ms grab=10.7 prep=1.5 sift_q=12.4 train=2.5 knn(bf)=1.0 ratio=0.1 pose=5.3 tmpl=0.0 | nq=236 nt=1316
+[SIFT profile] total=432.2ms grab=11.5 prep=0.7 sift_q=4.7 train=2.4 knn(flann)=81.8 ratio=0.1 pose=61.9 tmpl=269.2 | nq=200 nt=4424
+[SIFT profile] total=27.8ms grab=9.3 prep=1.1 sift_q=11.9 train=1.1 knn(bf)=1.2 ratio=0.1 pose=3.2 tmpl=0.0 | nq=253 nt=991
+
+[SIFT profile] --- session 2026-04-13 11:53:41 ---
+[SIFT profile] total=3140.4ms grab=12.1 prep=1.2 sift_q=8.6 train=0.0 knn(flann)=1593.7 ratio=0.1 pose=60.3 tmpl=1464.2 | nq=276 nt=119506
+[SIFT profile] total=28.1ms grab=12.4 prep=0.9 sift_q=10.0 train=1.7 knn(bf)=1.9 ratio=0.1 pose=1.1 tmpl=0.0 | nq=355 nt=2103
+[SIFT profile] total=201.7ms grab=10.6 prep=0.5 sift_q=13.7 train=2.9 knn(bf)=3.6 ratio=0.2 pose=75.2 tmpl=94.9 | nq=263 nt=3295
+[SIFT profile] total=35.6ms grab=10.6 prep=1.1 sift_q=19.4 train=1.6 knn(bf)=1.5 ratio=0.1 pose=1.2 tmpl=0.0 | nq=323 nt=1255
+[SIFT profile] total=17.9ms grab=6.1 prep=0.8 sift_q=7.8 train=0.8 knn(bf)=1.1 ratio=0.1 pose=1.2 tmpl=0.0 | nq=306 nt=1188
+[SIFT profile] total=17.5ms grab=6.6 prep=0.7 sift_q=7.3 train=1.0 knn(bf)=0.9 ratio=0.1 pose=0.8 tmpl=0.0 | nq=299 nt=1065
+[SIFT profile] total=21.5ms grab=9.2 prep=0.7 sift_q=8.3 train=1.3 knn(bf)=1.1 ratio=0.1 pose=0.8 tmpl=0.0 | nq=312 nt=1100
+[SIFT profile] total=35.0ms grab=14.6 prep=1.1 sift_q=13.8 train=2.1 knn(bf)=1.1 ratio=0.1 pose=2.2 tmpl=0.0 | nq=260 nt=1064
+[SIFT profile] total=24.9ms grab=7.6 prep=0.4 sift_q=7.9 train=1.7 knn(bf)=1.3 ratio=0.1 pose=5.6 tmpl=0.0 | nq=230 nt=946
+[SIFT profile] total=28.1ms grab=11.6 prep=0.7 sift_q=9.8 train=1.0 knn(bf)=0.7 ratio=0.1 pose=4.2 tmpl=0.0 | nq=175 nt=995
+[SIFT profile] total=126.7ms grab=9.5 prep=1.6 sift_q=10.7 train=1.8 knn(bf)=0.8 ratio=0.1 pose=11.3 tmpl=90.9 | nq=155 nt=969
+[SIFT profile] total=30.8ms grab=9.1 prep=1.5 sift_q=10.5 train=1.5 knn(bf)=1.2 ratio=0.1 pose=6.7 tmpl=0.0 | nq=291 nt=953
+[SIFT profile] total=18.7ms grab=7.3 prep=0.5 sift_q=5.5 train=1.2 knn(bf)=1.1 ratio=0.1 pose=2.9 tmpl=0.0 | nq=297 nt=952
+[SIFT profile] total=19.6ms grab=10.5 prep=0.5 sift_q=5.7 train=0.8 knn(bf)=0.7 ratio=0.1 pose=1.4 tmpl=0.0 | nq=257 nt=938
+[SIFT profile] total=24.3ms grab=8.4 prep=0.8 sift_q=10.7 train=0.9 knn(bf)=0.5 ratio=0.1 pose=2.9 tmpl=0.0 | nq=254 nt=914
+[SIFT profile] total=566.5ms grab=7.0 prep=0.9 sift_q=11.1 train=2.4 knn(bf)=2.0 ratio=0.1 pose=19.9 tmpl=522.9 | nq=193 nt=2553
+[SIFT profile] total=20.4ms grab=5.6 prep=0.4 sift_q=9.3 train=1.4 knn(bf)=2.0 ratio=0.1 pose=1.6 tmpl=0.0 | nq=317 nt=1335
+[SIFT profile] total=25.3ms grab=10.6 prep=0.4 sift_q=9.4 train=1.4 knn(bf)=1.7 ratio=0.1 pose=1.7 tmpl=0.0 | nq=309 nt=1360
+[SIFT profile] total=20.3ms grab=8.6 prep=0.7 sift_q=7.0 train=1.4 knn(bf)=0.8 ratio=0.1 pose=1.7 tmpl=0.0 | nq=267 nt=1254
+[SIFT profile] total=360.4ms grab=6.3 prep=0.7 sift_q=6.4 train=2.2 knn(bf)=2.9 ratio=0.1 pose=30.2 tmpl=311.5 | nq=259 nt=2616
+[SIFT profile] total=35.1ms grab=12.1 prep=0.7 sift_q=14.4 train=2.2 knn(bf)=2.5 ratio=0.1 pose=3.1 tmpl=0.0 | nq=341 nt=1890
+[SIFT profile] total=25.5ms grab=11.5 prep=0.9 sift_q=6.8 train=1.3 knn(bf)=1.7 ratio=0.1 pose=3.3 tmpl=0.0 | nq=296 nt=1668
+[SIFT profile] total=38.0ms grab=12.9 prep=1.2 sift_q=10.3 train=2.2 knn(bf)=1.3 ratio=0.1 pose=9.9 tmpl=0.0 | nq=228 nt=1479
+[SIFT profile] total=143.3ms grab=13.0 prep=0.8 sift_q=12.6 train=1.2 knn(bf)=1.4 ratio=0.1 pose=21.6 tmpl=92.5 | nq=218 nt=1143
+[SIFT profile] total=135.5ms grab=12.3 prep=0.7 sift_q=7.3 train=2.5 knn(bf)=1.6 ratio=0.1 pose=6.6 tmpl=104.3 | nq=130 nt=2134
+[SIFT profile] total=20.5ms grab=8.8 prep=0.6 sift_q=7.6 train=1.5 knn(bf)=0.7 ratio=0.0 pose=1.2 tmpl=0.0 | nq=145 nt=799
+[SIFT profile] total=23.7ms grab=7.1 prep=0.7 sift_q=12.0 train=1.6 knn(bf)=0.6 ratio=0.1 pose=1.7 tmpl=0.0 | nq=148 nt=730
+[SIFT profile] total=25.1ms grab=7.6 prep=0.8 sift_q=11.8 train=1.8 knn(bf)=1.1 ratio=0.1 pose=1.9 tmpl=0.0 | nq=166 nt=675
+[SIFT profile] total=19.8ms grab=9.8 prep=0.9 sift_q=5.6 train=1.2 knn(bf)=0.8 ratio=0.1 pose=1.4 tmpl=0.0 | nq=160 nt=633
+[SIFT profile] total=29.2ms grab=12.8 prep=1.0 sift_q=8.5 train=1.3 knn(bf)=0.6 ratio=0.1 pose=5.0 tmpl=0.0 | nq=98 nt=778
+[SIFT profile] total=145.8ms grab=9.9 prep=0.8 sift_q=7.4 train=2.6 knn(bf)=0.7 ratio=0.1 pose=5.4 tmpl=118.8 | nq=80 nt=731
+[SIFT profile] total=28.8ms grab=11.0 prep=1.3 sift_q=9.7 train=1.1 knn(bf)=0.5 ratio=0.0 pose=5.2 tmpl=0.0 | nq=125 nt=704
+[SIFT profile] total=15.9ms grab=4.3 prep=0.7 sift_q=7.9 train=1.1 knn(bf)=0.3 ratio=0.0 pose=1.3 tmpl=0.0 | nq=128 nt=652
+[SIFT profile] total=25.7ms grab=10.5 prep=1.2 sift_q=7.8 train=1.6 knn(bf)=0.6 ratio=0.1 pose=3.7 tmpl=0.0 | nq=110 nt=617
+[SIFT profile] total=627.6ms grab=9.0 prep=1.1 sift_q=10.7 train=3.7 knn(bf)=2.2 ratio=0.2 pose=6.7 tmpl=594.1 | nq=205 nt=1991
+[SIFT profile] total=21.5ms grab=7.6 prep=0.8 sift_q=9.5 train=1.2 knn(bf)=1.2 ratio=0.1 pose=1.0 tmpl=0.0 | nq=288 nt=1650
+[SIFT profile] total=27.4ms grab=10.3 prep=1.0 sift_q=11.9 train=1.2 knn(bf)=1.8 ratio=0.1 pose=1.0 tmpl=0.0 | nq=311 nt=1647
+
+[SIFT profile] --- session 2026-04-13 12:01:49 ---
+[SIFT profile] total=1558.2ms grab=8.6 prep=1.1 sift_q=8.4 train=0.0 knn(flann)=1537.8 ratio=0.1 pose=2.1 tmpl=0.0 | nq=310 nt=119506
+[SIFT profile] total=27.6ms grab=13.3 prep=1.6 sift_q=8.8 train=1.5 knn(bf)=1.3 ratio=0.1 pose=1.0 tmpl=0.0 | nq=310 nt=1683
+[SIFT profile] total=20.0ms grab=8.2 prep=0.7 sift_q=6.9 train=1.4 knn(bf)=1.7 ratio=0.1 pose=1.1 tmpl=0.0 | nq=327 nt=1661
+[SIFT profile] total=25.9ms grab=9.0 prep=0.9 sift_q=10.9 train=1.7 knn(bf)=1.8 ratio=0.2 pose=1.2 tmpl=0.0 | nq=288 nt=1551
+[SIFT profile] total=19.7ms grab=4.9 prep=1.2 sift_q=8.6 train=1.7 knn(bf)=1.8 ratio=0.1 pose=1.4 tmpl=0.0 | nq=302 nt=1308
+[SIFT profile] total=28.5ms grab=9.6 prep=0.8 sift_q=11.3 train=2.9 knn(bf)=1.6 ratio=0.1 pose=2.2 tmpl=0.0 | nq=302 nt=1339
+[SIFT profile] total=26.6ms grab=9.8 prep=1.0 sift_q=9.5 train=1.8 knn(bf)=1.6 ratio=0.1 pose=2.9 tmpl=0.0 | nq=329 nt=1293
+[SIFT profile] total=20.8ms grab=9.4 prep=1.2 sift_q=6.5 train=1.1 knn(bf)=1.0 ratio=0.1 pose=1.3 tmpl=0.0 | nq=301 nt=1262
+[SIFT profile] total=22.3ms grab=9.1 prep=1.3 sift_q=8.1 train=1.0 knn(bf)=1.1 ratio=0.1 pose=1.5 tmpl=0.0 | nq=300 nt=1311
+[SIFT profile] total=22.8ms grab=6.5 prep=1.4 sift_q=11.0 train=1.7 knn(bf)=0.9 ratio=0.1 pose=1.2 tmpl=0.0 | nq=317 nt=1123
+[SIFT profile] total=17.6ms grab=4.6 prep=0.9 sift_q=8.7 train=1.0 knn(bf)=0.8 ratio=0.1 pose=1.6 tmpl=0.0 | nq=279 nt=1006
+[SIFT profile] total=28.4ms grab=7.1 prep=1.1 sift_q=10.9 train=1.7 knn(bf)=0.8 ratio=0.2 pose=6.5 tmpl=0.0 | nq=214 nt=1245
+[SIFT profile] total=20.0ms grab=8.7 prep=0.7 sift_q=7.8 train=1.0 knn(bf)=0.9 ratio=0.1 pose=0.8 tmpl=0.0 | nq=309 nt=1603
+[SIFT profile] total=54.3ms grab=13.5 prep=2.2 sift_q=21.3 train=2.7 knn(bf)=13.2 ratio=0.1 pose=1.3 tmpl=0.0 | nq=271 nt=1561
+[SIFT profile] total=21.7ms grab=9.4 prep=1.0 sift_q=5.2 train=1.6 knn(bf)=1.6 ratio=0.1 pose=2.7 tmpl=0.0 | nq=293 nt=1458
+[SIFT profile] total=20.4ms grab=10.2 prep=0.7 sift_q=5.9 train=1.2 knn(bf)=1.1 ratio=0.1 pose=1.0 tmpl=0.0 | nq=257 nt=1541
+[SIFT profile] total=743.7ms grab=9.3 prep=2.2 sift_q=11.9 train=4.6 knn(flann)=60.2 ratio=0.0 pose=46.3 tmpl=609.1 | nq=123 nt=3659
+[SIFT profile] total=25.2ms grab=8.7 prep=1.4 sift_q=7.9 train=2.7 knn(bf)=2.4 ratio=0.1 pose=2.0 tmpl=0.0 | nq=293 nt=1781
+[SIFT profile] total=44.6ms grab=14.5 prep=2.6 sift_q=20.3 train=1.8 knn(bf)=2.7 ratio=0.2 pose=2.4 tmpl=0.0 | nq=299 nt=1862
+[SIFT profile] total=22.1ms grab=5.7 prep=1.7 sift_q=10.3 train=1.9 knn(bf)=1.3 ratio=0.1 pose=1.0 tmpl=0.0 | nq=318 nt=1931
+[SIFT profile] total=22.2ms grab=6.2 prep=1.1 sift_q=10.3 train=1.3 knn(bf)=2.0 ratio=0.1 pose=1.1 tmpl=0.0 | nq=326 nt=2118
+[SIFT profile] total=18.7ms grab=6.6 prep=0.8 sift_q=6.7 train=2.0 knn(bf)=1.6 ratio=0.1 pose=0.9 tmpl=0.0 | nq=339 nt=2328
+[SIFT profile] total=23.4ms grab=9.8 prep=1.0 sift_q=7.0 train=2.1 knn(bf)=2.5 ratio=0.1 pose=0.9 tmpl=0.0 | nq=299 nt=2647
+[SIFT profile] total=29.5ms grab=11.3 prep=0.9 sift_q=9.7 train=3.2 knn(bf)=2.6 ratio=0.2 pose=1.4 tmpl=0.0 | nq=315 nt=2887
+[SIFT profile] total=29.8ms grab=11.9 prep=1.1 sift_q=10.3 train=2.8 knn(bf)=2.7 ratio=0.1 pose=0.9 tmpl=0.0 | nq=327 nt=3018
+[SIFT profile] total=31.1ms grab=7.1 prep=0.7 sift_q=13.3 train=3.1 knn(bf)=5.5 ratio=0.2 pose=1.2 tmpl=0.0 | nq=344 nt=3102
+[SIFT profile] total=29.3ms grab=8.6 prep=1.4 sift_q=11.1 train=2.8 knn(bf)=4.2 ratio=0.1 pose=1.1 tmpl=0.0 | nq=309 nt=3255
+[SIFT profile] total=31.6ms grab=10.0 prep=1.4 sift_q=11.9 train=3.3 knn(bf)=3.5 ratio=0.4 pose=1.0 tmpl=0.0 | nq=337 nt=3336
+[SIFT profile] total=34.5ms grab=10.9 prep=1.7 sift_q=12.7 train=2.7 knn(bf)=5.0 ratio=0.2 pose=1.2 tmpl=0.0 | nq=331 nt=3301
+[SIFT profile] total=25.0ms grab=8.7 prep=0.9 sift_q=9.2 train=2.0 knn(bf)=2.9 ratio=0.1 pose=1.1 tmpl=0.0 | nq=340 nt=3139
+[SIFT profile] total=25.3ms grab=10.2 prep=1.0 sift_q=7.1 train=2.6 knn(bf)=2.8 ratio=0.1 pose=1.3 tmpl=0.0 | nq=323 nt=3012
+[SIFT profile] total=38.2ms grab=12.9 prep=1.8 sift_q=14.0 train=3.9 knn(bf)=3.5 ratio=0.2 pose=1.8 tmpl=0.0 | nq=310 nt=3088
+[SIFT profile] total=29.3ms grab=9.7 prep=1.5 sift_q=12.7 train=1.7 knn(bf)=2.5 ratio=0.2 pose=1.0 tmpl=0.0 | nq=311 nt=2933
+[SIFT profile] total=35.6ms grab=11.8 prep=2.3 sift_q=14.9 train=2.3 knn(bf)=3.0 ratio=0.2 pose=1.1 tmpl=0.0 | nq=320 nt=2699
+[SIFT profile] total=22.3ms grab=6.7 prep=0.7 sift_q=7.8 train=2.7 knn(bf)=2.7 ratio=0.1 pose=1.6 tmpl=0.0 | nq=299 nt=2477
+[SIFT profile] total=33.2ms grab=7.6 prep=1.0 sift_q=20.4 train=1.5 knn(bf)=1.5 ratio=0.1 pose=1.1 tmpl=0.0 | nq=310 nt=2282
+[SIFT profile] total=26.9ms grab=9.0 prep=1.0 sift_q=9.6 train=2.6 knn(bf)=2.8 ratio=0.2 pose=1.7 tmpl=0.0 | nq=323 nt=2265
+[SIFT profile] total=23.5ms grab=8.1 prep=1.3 sift_q=8.6 train=1.4 knn(bf)=2.7 ratio=0.1 pose=1.2 tmpl=0.0 | nq=319 nt=2177
+[SIFT profile] total=19.8ms grab=5.9 prep=1.2 sift_q=8.1 train=1.6 knn(bf)=1.8 ratio=0.1 pose=1.1 tmpl=0.0 | nq=297 nt=2179
+[SIFT profile] total=24.9ms grab=7.0 prep=1.2 sift_q=9.2 train=2.5 knn(bf)=1.9 ratio=0.1 pose=2.9 tmpl=0.0 | nq=310 nt=2182
+[SIFT profile] total=33.7ms grab=8.2 prep=1.3 sift_q=16.9 train=2.5 knn(bf)=3.1 ratio=0.2 pose=1.6 tmpl=0.0 | nq=286 nt=2222
+[SIFT profile] total=23.7ms grab=8.8 prep=1.3 sift_q=7.5 train=2.0 knn(bf)=1.7 ratio=0.1 pose=2.1 tmpl=0.0 | nq=313 nt=2201
+[SIFT profile] total=34.8ms grab=8.5 prep=1.3 sift_q=15.8 train=2.7 knn(bf)=3.3 ratio=0.2 pose=3.1 tmpl=0.0 | nq=326 nt=2180
+[SIFT profile] total=25.3ms grab=8.0 prep=0.8 sift_q=8.1 train=2.5 knn(bf)=1.4 ratio=0.1 pose=4.3 tmpl=0.0 | nq=319 nt=2129
+[SIFT profile] total=30.5ms grab=10.5 prep=1.7 sift_q=10.6 train=1.3 knn(bf)=1.8 ratio=0.1 pose=4.6 tmpl=0.0 | nq=319 nt=2010
+[SIFT profile] total=186.2ms grab=10.2 prep=1.9 sift_q=15.0 train=2.6 knn(bf)=2.9 ratio=0.1 pose=21.5 tmpl=131.9 | nq=271 nt=2494
+[SIFT profile] total=15.6ms grab=5.0 prep=0.7 sift_q=5.4 train=1.7 knn(bf)=1.1 ratio=0.1 pose=1.5 tmpl=0.0 | nq=260 nt=1898
+[SIFT profile] total=27.6ms grab=9.1 prep=1.2 sift_q=11.1 train=2.4 knn(bf)=2.1 ratio=0.1 pose=1.5 tmpl=0.0 | nq=288 nt=1818
+[SIFT profile] total=24.8ms grab=9.9 prep=1.4 sift_q=9.5 train=1.4 knn(bf)=1.7 ratio=0.1 pose=0.8 tmpl=0.0 | nq=322 nt=1743
+[SIFT profile] total=27.5ms grab=8.1 prep=1.1 sift_q=12.1 train=1.8 knn(bf)=2.4 ratio=0.1 pose=1.9 tmpl=0.0 | nq=304 nt=1786
+[SIFT profile] total=201.0ms grab=7.3 prep=1.2 sift_q=7.3 train=1.6 knn(bf)=1.6 ratio=0.1 pose=64.9 tmpl=116.9 | nq=315 nt=2022
+[SIFT profile] total=3195.2ms grab=4.2 prep=0.7 sift_q=6.2 train=0.0 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=3184.0 | nq=0 nt=119506
+[SIFT profile] total=32.6ms grab=9.0 prep=2.2 sift_q=16.4 train=2.1 knn(bf)=1.9 ratio=0.1 pose=1.0 tmpl=0.0 | nq=338 nt=1990
+[SIFT profile] total=37.7ms grab=13.6 prep=2.0 sift_q=15.7 train=1.3 knn(bf)=2.0 ratio=0.1 pose=2.9 tmpl=0.0 | nq=303 nt=1614
+[SIFT profile] total=25.0ms grab=7.1 prep=1.5 sift_q=10.8 train=1.2 knn(bf)=0.9 ratio=0.1 pose=3.3 tmpl=0.0 | nq=219 nt=1244
+[SIFT profile] total=28.0ms grab=11.9 prep=1.2 sift_q=10.6 train=1.8 knn(bf)=0.7 ratio=0.1 pose=1.7 tmpl=0.0 | nq=210 nt=613
+[SIFT profile] total=25.8ms grab=9.9 prep=0.6 sift_q=10.5 train=2.2 knn(bf)=0.6 ratio=0.1 pose=1.9 tmpl=0.0 | nq=189 nt=690
+[SIFT profile] total=23.7ms grab=7.1 prep=1.7 sift_q=10.5 train=1.1 knn(bf)=0.6 ratio=0.1 pose=2.4 tmpl=0.0 | nq=174 nt=668
+[SIFT profile] total=27.7ms grab=12.7 prep=1.3 sift_q=10.3 train=1.5 knn(bf)=0.6 ratio=0.0 pose=1.2 tmpl=0.0 | nq=200 nt=643
+[SIFT profile] total=20.3ms grab=7.2 prep=1.6 sift_q=8.5 train=1.1 knn(bf)=0.4 ratio=0.1 pose=1.4 tmpl=0.0 | nq=148 nt=601
+[SIFT profile] total=27.5ms grab=10.7 prep=1.3 sift_q=7.6 train=0.8 knn(bf)=0.3 ratio=0.0 pose=6.7 tmpl=0.0 | nq=142 nt=535
+[SIFT profile] total=266.2ms grab=9.6 prep=1.7 sift_q=10.5 train=1.5 knn(bf)=0.9 ratio=0.2 pose=21.8 tmpl=220.0 | nq=140 nt=1046
+[SIFT profile] total=35.3ms grab=10.5 prep=2.0 sift_q=16.0 train=2.6 knn(bf)=2.5 ratio=0.1 pose=1.6 tmpl=0.0 | nq=332 nt=2063
+[SIFT profile] total=20.3ms grab=6.5 prep=1.3 sift_q=7.5 train=1.5 knn(bf)=2.0 ratio=0.4 pose=1.1 tmpl=0.0 | nq=333 nt=2063
+[SIFT profile] total=27.3ms grab=8.8 prep=2.6 sift_q=11.1 train=1.8 knn(bf)=1.9 ratio=0.1 pose=1.0 tmpl=0.0 | nq=296 nt=2063
+[SIFT profile] total=27.0ms grab=6.5 prep=1.4 sift_q=13.8 train=1.5 knn(bf)=2.7 ratio=0.1 pose=0.9 tmpl=0.0 | nq=328 nt=2081
+[SIFT profile] total=28.0ms grab=6.6 prep=1.7 sift_q=12.6 train=2.2 knn(bf)=2.7 ratio=0.1 pose=1.9 tmpl=0.0 | nq=336 nt=2094
+[SIFT profile] total=41.0ms grab=10.0 prep=1.2 sift_q=19.5 train=3.4 knn(bf)=3.2 ratio=0.2 pose=3.4 tmpl=0.0 | nq=340 nt=2064
+[SIFT profile] total=18.9ms grab=6.5 prep=1.1 sift_q=6.6 train=1.9 knn(bf)=1.9 ratio=0.1 pose=0.9 tmpl=0.0 | nq=336 nt=2085
+[SIFT profile] total=29.5ms grab=12.2 prep=1.3 sift_q=10.4 train=1.2 knn(bf)=1.9 ratio=0.1 pose=2.4 tmpl=0.0 | nq=336 nt=2084
+[SIFT profile] total=20.7ms grab=6.9 prep=0.9 sift_q=6.0 train=2.2 knn(bf)=1.9 ratio=0.1 pose=2.7 tmpl=0.0 | nq=301 nt=2029
+[SIFT profile] total=31.0ms grab=7.1 prep=1.4 sift_q=14.6 train=2.6 knn(bf)=1.8 ratio=0.4 pose=3.1 tmpl=0.0 | nq=286 nt=1971
+[SIFT profile] total=25.7ms grab=7.2 prep=1.8 sift_q=12.1 train=1.7 knn(bf)=1.6 ratio=0.1 pose=1.2 tmpl=0.0 | nq=270 nt=1964
+[SIFT profile] total=38.2ms grab=13.2 prep=1.8 sift_q=14.5 train=2.7 knn(bf)=3.1 ratio=0.1 pose=2.8 tmpl=0.0 | nq=293 nt=1969
+[SIFT profile] total=23.8ms grab=9.6 prep=1.3 sift_q=8.1 train=1.8 knn(bf)=1.7 ratio=0.1 pose=1.2 tmpl=0.0 | nq=287 nt=1895
+[SIFT profile] total=36.5ms grab=8.7 prep=2.7 sift_q=17.6 train=2.3 knn(bf)=2.8 ratio=0.2 pose=2.1 tmpl=0.0 | nq=291 nt=1952
+[SIFT profile] total=31.6ms grab=8.8 prep=0.8 sift_q=14.3 train=2.8 knn(bf)=3.2 ratio=0.2 pose=1.4 tmpl=0.0 | nq=299 nt=1979
+[SIFT profile] total=39.0ms grab=11.9 prep=1.9 sift_q=15.4 train=4.0 knn(bf)=1.9 ratio=0.2 pose=3.6 tmpl=0.0 | nq=298 nt=1979
+[SIFT profile] total=20.0ms grab=6.0 prep=1.2 sift_q=7.2 train=1.8 knn(bf)=1.7 ratio=0.1 pose=1.8 tmpl=0.0 | nq=316 nt=1965
+[SIFT profile] total=22.1ms grab=5.5 prep=1.1 sift_q=11.0 train=2.0 knn(bf)=1.3 ratio=0.1 pose=1.2 tmpl=0.0 | nq=317 nt=1931
+[SIFT profile] total=24.5ms grab=7.8 prep=1.3 sift_q=12.0 train=1.2 knn(bf)=1.2 ratio=0.1 pose=0.8 tmpl=0.0 | nq=317 nt=1834
+[SIFT profile] total=22.1ms grab=4.3 prep=1.2 sift_q=11.4 train=2.5 knn(bf)=1.8 ratio=0.1 pose=0.8 tmpl=0.0 | nq=300 nt=1772
+[SIFT profile] total=22.4ms grab=11.1 prep=1.0 sift_q=6.1 train=1.4 knn(bf)=1.4 ratio=0.1 pose=1.3 tmpl=0.0 | nq=297 nt=1718
+[SIFT profile] total=37.4ms grab=11.6 prep=2.2 sift_q=16.5 train=3.3 knn(bf)=1.4 ratio=0.1 pose=2.1 tmpl=0.0 | nq=304 nt=1691
+[SIFT profile] total=27.9ms grab=12.3 prep=1.0 sift_q=9.4 train=1.8 knn(bf)=2.1 ratio=0.1 pose=1.1 tmpl=0.0 | nq=320 nt=1688
+[SIFT profile] total=19.3ms grab=5.7 prep=0.8 sift_q=7.4 train=1.5 knn(bf)=2.3 ratio=0.2 pose=1.3 tmpl=0.0 | nq=330 nt=1751
+[SIFT profile] total=23.4ms grab=6.0 prep=1.1 sift_q=10.2 train=2.5 knn(bf)=1.6 ratio=0.1 pose=1.8 tmpl=0.0 | nq=325 nt=1758
+[SIFT profile] total=27.2ms grab=7.0 prep=0.9 sift_q=13.7 train=2.0 knn(bf)=1.1 ratio=0.1 pose=2.4 tmpl=0.0 | nq=301 nt=1754
+[SIFT profile] total=26.8ms grab=10.9 prep=1.2 sift_q=10.3 train=1.2 knn(bf)=1.5 ratio=0.1 pose=1.5 tmpl=0.0 | nq=311 nt=1759
+[SIFT profile] total=17.0ms grab=4.9 prep=1.1 sift_q=7.0 train=1.4 knn(bf)=1.1 ratio=0.1 pose=1.4 tmpl=0.0 | nq=310 nt=1763
+[SIFT profile] total=24.8ms grab=11.4 prep=0.7 sift_q=5.8 train=1.1 knn(bf)=1.1 ratio=0.1 pose=4.5 tmpl=0.0 | nq=282 nt=1782
+[SIFT profile] total=17.8ms grab=3.9 prep=1.0 sift_q=6.8 train=1.9 knn(bf)=1.3 ratio=0.1 pose=2.8 tmpl=0.0 | nq=279 nt=1757
+[SIFT profile] total=23.0ms grab=6.2 prep=1.4 sift_q=11.5 train=1.0 knn(bf)=1.1 ratio=0.1 pose=1.9 tmpl=0.0 | nq=303 nt=1528
+[SIFT profile] total=133.0ms grab=7.9 prep=2.0 sift_q=16.8 train=1.9 knn(bf)=2.1 ratio=0.2 pose=11.7 tmpl=90.3 | nq=325 nt=1248
+[SIFT profile] total=23.0ms grab=4.0 prep=0.7 sift_q=11.8 train=1.7 knn(bf)=1.2 ratio=0.1 pose=3.5 tmpl=0.0 | nq=283 nt=1129
+[SIFT profile] total=184.6ms grab=8.5 prep=1.5 sift_q=7.8 train=1.7 knn(bf)=0.9 ratio=0.1 pose=48.0 tmpl=116.1 | nq=262 nt=1436
+[SIFT profile] total=24.0ms grab=9.1 prep=1.5 sift_q=9.4 train=0.8 knn(bf)=0.6 ratio=0.0 pose=2.6 tmpl=0.0 | nq=277 nt=902
+[SIFT profile] total=22.0ms grab=6.8 prep=1.2 sift_q=9.5 train=0.9 knn(bf)=0.7 ratio=0.1 pose=2.8 tmpl=0.0 | nq=259 nt=833
+[SIFT profile] total=80.5ms grab=10.8 prep=0.6 sift_q=7.1 train=1.3 knn(bf)=1.1 ratio=0.1 pose=16.0 tmpl=43.4 | nq=274 nt=694
+[SIFT profile] total=60.1ms grab=13.8 prep=4.0 sift_q=27.4 train=3.6 knn(bf)=1.4 ratio=0.2 pose=9.7 tmpl=0.0 | nq=253 nt=620
+[SIFT profile] total=24.7ms grab=7.2 prep=1.1 sift_q=10.2 train=1.1 knn(bf)=0.9 ratio=0.1 pose=3.9 tmpl=0.0 | nq=283 nt=568
+[SIFT profile] total=35.2ms grab=14.3 prep=1.7 sift_q=13.6 train=1.3 knn(bf)=0.9 ratio=0.1 pose=3.3 tmpl=0.0 | nq=303 nt=600
+[SIFT profile] total=33.1ms grab=8.6 prep=2.8 sift_q=10.6 train=2.9 knn(bf)=1.1 ratio=0.2 pose=6.8 tmpl=0.0 | nq=282 nt=683
+[SIFT profile] total=30.1ms grab=7.2 prep=0.9 sift_q=14.5 train=1.5 knn(bf)=1.3 ratio=0.1 pose=4.6 tmpl=0.0 | nq=319 nt=770
+[SIFT profile] total=27.2ms grab=11.7 prep=1.6 sift_q=10.1 train=0.7 knn(bf)=0.5 ratio=0.1 pose=2.4 tmpl=0.0 | nq=292 nt=770
+[SIFT profile] total=98.8ms grab=9.0 prep=1.7 sift_q=10.9 train=1.5 knn(bf)=1.3 ratio=0.1 pose=12.3 tmpl=61.9 | nq=321 nt=760
+[SIFT profile] total=29.5ms grab=8.8 prep=1.7 sift_q=11.9 train=1.5 knn(bf)=1.3 ratio=0.2 pose=4.0 tmpl=0.0 | nq=320 nt=786
+[SIFT profile] total=28.5ms grab=9.7 prep=0.9 sift_q=12.6 train=1.4 knn(bf)=1.1 ratio=0.1 pose=2.6 tmpl=0.0 | nq=325 nt=776
+[SIFT profile] total=22.1ms grab=10.3 prep=0.8 sift_q=7.4 train=1.1 knn(bf)=0.9 ratio=0.1 pose=1.6 tmpl=0.0 | nq=304 nt=710
+[SIFT profile] total=32.0ms grab=8.7 prep=0.8 sift_q=11.1 train=2.0 knn(bf)=1.8 ratio=0.2 pose=7.4 tmpl=0.0 | nq=312 nt=696
+[SIFT profile] total=29.5ms grab=7.9 prep=1.7 sift_q=9.3 train=2.2 knn(bf)=1.2 ratio=0.2 pose=6.9 tmpl=0.0 | nq=324 nt=738
+[SIFT profile] total=33.0ms grab=9.0 prep=1.3 sift_q=11.1 train=2.0 knn(bf)=1.0 ratio=0.1 pose=8.5 tmpl=0.0 | nq=306 nt=1118
+[SIFT profile] total=38.6ms grab=11.5 prep=1.1 sift_q=9.4 train=1.7 knn(bf)=1.8 ratio=0.1 pose=12.9 tmpl=0.0 | nq=298 nt=1063
+[SIFT profile] total=132.5ms grab=10.8 prep=1.3 sift_q=7.5 train=1.1 knn(bf)=1.6 ratio=0.1 pose=19.4 tmpl=90.7 | nq=290 nt=1162
+[SIFT profile] total=37.1ms grab=10.9 prep=2.3 sift_q=14.3 train=1.8 knn(bf)=1.4 ratio=0.1 pose=6.3 tmpl=0.0 | nq=284 nt=1013
+[SIFT profile] total=33.5ms grab=8.1 prep=1.6 sift_q=16.4 train=2.2 knn(bf)=1.2 ratio=0.1 pose=3.9 tmpl=0.0 | nq=311 nt=1106
+[SIFT profile] total=428.5ms grab=4.5 prep=0.7 sift_q=2.7 train=1.9 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=418.7 | nq=0 nt=4030
+[SIFT profile] total=18.0ms grab=7.4 prep=0.9 sift_q=6.3 train=1.1 knn(bf)=1.1 ratio=0.1 pose=1.1 tmpl=0.0 | nq=274 nt=1262
+[SIFT profile] total=31.4ms grab=12.7 prep=1.9 sift_q=10.4 train=2.7 knn(bf)=0.9 ratio=0.1 pose=2.6 tmpl=0.0 | nq=275 nt=1249
+[SIFT profile] total=18.8ms grab=5.5 prep=0.7 sift_q=7.4 train=1.7 knn(bf)=1.6 ratio=0.1 pose=1.8 tmpl=0.0 | nq=288 nt=1189
+[SIFT profile] total=29.8ms grab=6.7 prep=0.8 sift_q=13.1 train=7.1 knn(bf)=0.8 ratio=0.1 pose=1.2 tmpl=0.0 | nq=229 nt=1154
+[SIFT profile] total=18.7ms grab=3.9 prep=1.1 sift_q=6.5 train=1.3 knn(bf)=2.1 ratio=0.1 pose=3.6 tmpl=0.0 | nq=229 nt=1142
+
+[SIFT profile] --- session 2026-04-13 12:09:55 ---
+[SIFT profile] total=3062.8ms grab=18.1 prep=16.4 sift_q=10.8 train=0.0 knn(flann)=1589.2 ratio=0.2 pose=14.5 tmpl=1413.4 | nq=193 nt=119507
+[SIFT profile] total=19.4ms grab=8.6 prep=0.9 sift_q=6.4 train=1.1 knn(bf)=1.0 ratio=0.1 pose=1.1 tmpl=0.0 | nq=222 nt=1323
+[SIFT profile] total=31.9ms grab=13.0 prep=1.3 sift_q=11.1 train=1.8 knn(bf)=1.7 ratio=0.2 pose=2.7 tmpl=0.0 | nq=279 nt=1267
+[SIFT profile] total=34.2ms grab=11.0 prep=1.7 sift_q=15.5 train=2.8 knn(bf)=1.6 ratio=0.1 pose=1.4 tmpl=0.0 | nq=270 nt=1334
+[SIFT profile] total=17.6ms grab=6.4 prep=1.0 sift_q=5.9 train=1.7 knn(bf)=1.6 ratio=0.1 pose=0.9 tmpl=0.0 | nq=308 nt=1320
+[SIFT profile] total=37.7ms grab=7.3 prep=1.4 sift_q=18.6 train=4.1 knn(bf)=3.2 ratio=0.2 pose=2.8 tmpl=0.0 | nq=295 nt=1431
+[SIFT profile] total=27.2ms grab=9.9 prep=1.0 sift_q=12.2 train=1.9 knn(bf)=1.1 ratio=0.2 pose=1.1 tmpl=0.0 | nq=233 nt=1497
+[SIFT profile] total=20.9ms grab=10.7 prep=0.7 sift_q=5.4 train=1.0 knn(bf)=1.3 ratio=0.1 pose=1.6 tmpl=0.0 | nq=237 nt=1470
+[SIFT profile] total=24.6ms grab=10.1 prep=1.2 sift_q=8.4 train=1.4 knn(bf)=0.7 ratio=0.1 pose=2.7 tmpl=0.0 | nq=186 nt=1496
+[SIFT profile] total=30.1ms grab=7.2 prep=0.6 sift_q=11.0 train=2.8 knn(bf)=2.8 ratio=0.2 pose=5.5 tmpl=0.0 | nq=212 nt=1448
+[SIFT profile] total=27.1ms grab=7.4 prep=1.0 sift_q=12.6 train=2.2 knn(bf)=1.4 ratio=0.1 pose=2.3 tmpl=0.0 | nq=216 nt=1341
+[SIFT profile] total=16.6ms grab=5.7 prep=1.7 sift_q=6.2 train=1.3 knn(bf)=0.8 ratio=0.1 pose=0.9 tmpl=0.0 | nq=183 nt=1306
+[SIFT profile] total=26.5ms grab=12.4 prep=1.8 sift_q=9.3 train=0.7 knn(bf)=0.6 ratio=0.1 pose=1.7 tmpl=0.0 | nq=172 nt=1184
+[SIFT profile] total=28.2ms grab=4.9 prep=2.0 sift_q=15.0 train=3.6 knn(bf)=1.0 ratio=0.1 pose=1.4 tmpl=0.0 | nq=167 nt=1144
+[SIFT profile] total=20.0ms grab=10.8 prep=0.8 sift_q=4.6 train=1.6 knn(bf)=0.5 ratio=0.1 pose=1.7 tmpl=0.0 | nq=132 nt=1155
+[SIFT profile] total=12.4ms grab=5.5 prep=0.8 sift_q=3.2 train=0.9 knn(bf)=0.5 ratio=0.0 pose=1.4 tmpl=0.0 | nq=130 nt=1162
+[SIFT profile] total=28.1ms grab=13.5 prep=1.1 sift_q=8.0 train=1.4 knn(bf)=0.7 ratio=0.1 pose=3.2 tmpl=0.0 | nq=141 nt=1163
+[SIFT profile] total=24.3ms grab=6.4 prep=1.4 sift_q=8.5 train=2.7 knn(bf)=1.2 ratio=0.1 pose=4.0 tmpl=0.0 | nq=144 nt=1195
+[SIFT profile] total=23.5ms grab=10.4 prep=1.6 sift_q=5.2 train=2.1 knn(bf)=1.6 ratio=0.1 pose=2.3 tmpl=0.0 | nq=167 nt=1221
+[SIFT profile] total=19.7ms grab=12.7 prep=0.6 sift_q=3.6 train=1.1 knn(bf)=0.8 ratio=0.1 pose=0.8 tmpl=0.0 | nq=185 nt=1218
+[SIFT profile] total=19.3ms grab=5.4 prep=0.9 sift_q=9.1 train=1.6 knn(bf)=1.1 ratio=0.1 pose=1.3 tmpl=0.0 | nq=214 nt=1301
+[SIFT profile] total=20.1ms grab=8.8 prep=1.3 sift_q=5.8 train=0.9 knn(bf)=0.9 ratio=0.1 pose=2.3 tmpl=0.0 | nq=273 nt=1354
+[SIFT profile] total=29.3ms grab=11.6 prep=1.5 sift_q=11.6 train=1.6 knn(bf)=1.4 ratio=0.1 pose=1.4 tmpl=0.0 | nq=336 nt=1408
+[SIFT profile] total=26.6ms grab=6.5 prep=1.1 sift_q=13.4 train=1.7 knn(bf)=2.6 ratio=0.1 pose=1.2 tmpl=0.0 | nq=340 nt=1382
+[SIFT profile] total=28.0ms grab=7.1 prep=1.5 sift_q=14.4 train=1.4 knn(bf)=1.8 ratio=0.1 pose=1.5 tmpl=0.0 | nq=342 nt=1293
+[SIFT profile] total=30.3ms grab=9.1 prep=1.0 sift_q=12.6 train=2.6 knn(bf)=1.4 ratio=0.2 pose=3.3 tmpl=0.0 | nq=343 nt=1215
+[SIFT profile] total=16.3ms grab=6.8 prep=0.8 sift_q=5.1 train=1.1 knn(bf)=0.9 ratio=0.1 pose=1.5 tmpl=0.0 | nq=321 nt=1184
+[SIFT profile] total=21.9ms grab=9.0 prep=0.6 sift_q=8.0 train=1.9 knn(bf)=0.9 ratio=0.1 pose=1.3 tmpl=0.0 | nq=341 nt=1170
+[SIFT profile] total=23.9ms grab=6.9 prep=1.1 sift_q=6.6 train=1.8 knn(bf)=6.1 ratio=0.1 pose=1.3 tmpl=0.0 | nq=335 nt=1121
+[SIFT profile] total=26.9ms grab=10.6 prep=1.7 sift_q=9.0 train=1.7 knn(bf)=1.0 ratio=0.1 pose=2.6 tmpl=0.0 | nq=310 nt=1087
+[SIFT profile] total=21.3ms grab=6.6 prep=1.0 sift_q=9.4 train=1.4 knn(bf)=1.5 ratio=0.2 pose=1.1 tmpl=0.0 | nq=320 nt=1056
+[SIFT profile] total=20.2ms grab=9.5 prep=0.7 sift_q=7.0 train=1.3 knn(bf)=0.8 ratio=0.1 pose=0.9 tmpl=0.0 | nq=287 nt=1037
+[SIFT profile] total=15.3ms grab=3.9 prep=0.6 sift_q=8.0 train=1.1 knn(bf)=0.7 ratio=0.1 pose=0.8 tmpl=0.0 | nq=254 nt=1021
+[SIFT profile] total=20.8ms grab=7.2 prep=1.0 sift_q=8.3 train=1.7 knn(bf)=0.8 ratio=0.1 pose=1.6 tmpl=0.0 | nq=236 nt=985
+[SIFT profile] total=25.9ms grab=11.8 prep=1.1 sift_q=6.2 train=2.0 knn(bf)=1.3 ratio=0.1 pose=3.4 tmpl=0.0 | nq=209 nt=979
+[SIFT profile] total=30.6ms grab=12.2 prep=1.8 sift_q=10.3 train=1.8 knn(bf)=0.9 ratio=0.1 pose=3.4 tmpl=0.0 | nq=138 nt=964
+[SIFT profile] total=21.5ms grab=7.4 prep=0.9 sift_q=4.7 train=1.6 knn(bf)=1.2 ratio=0.1 pose=5.5 tmpl=0.0 | nq=103 nt=972
+[SIFT profile] total=24.8ms grab=4.8 prep=1.2 sift_q=8.3 train=1.9 knn(bf)=0.6 ratio=0.1 pose=8.0 tmpl=0.0 | nq=110 nt=977
+[SIFT profile] total=17.6ms grab=6.7 prep=0.7 sift_q=6.8 train=1.2 knn(bf)=0.5 ratio=0.0 pose=1.6 tmpl=0.0 | nq=151 nt=926
+[SIFT profile] total=22.1ms grab=9.1 prep=1.6 sift_q=8.5 train=1.0 knn(bf)=0.6 ratio=0.1 pose=1.2 tmpl=0.0 | nq=149 nt=898
+[SIFT profile] total=22.3ms grab=9.5 prep=1.0 sift_q=7.7 train=1.1 knn(bf)=0.5 ratio=0.0 pose=2.4 tmpl=0.0 | nq=106 nt=918
+[SIFT profile] total=27.1ms grab=6.7 prep=1.3 sift_q=10.4 train=2.8 knn(bf)=1.0 ratio=0.1 pose=4.8 tmpl=0.0 | nq=104 nt=953
+[SIFT profile] total=26.6ms grab=9.9 prep=1.2 sift_q=8.3 train=2.4 knn(bf)=0.8 ratio=0.0 pose=4.0 tmpl=0.0 | nq=98 nt=1226
+[SIFT profile] total=18.7ms grab=4.5 prep=1.1 sift_q=4.9 train=0.9 knn(bf)=0.6 ratio=0.0 pose=6.6 tmpl=0.0 | nq=113 nt=933
+[SIFT profile] total=20.6ms grab=4.8 prep=1.6 sift_q=6.8 train=1.8 knn(bf)=0.9 ratio=0.1 pose=4.6 tmpl=0.0 | nq=113 nt=904
+[SIFT profile] total=20.1ms grab=11.2 prep=0.6 sift_q=3.5 train=2.3 knn(bf)=0.7 ratio=0.1 pose=1.6 tmpl=0.0 | nq=108 nt=907
+[SIFT profile] total=21.2ms grab=8.5 prep=1.1 sift_q=7.5 train=1.7 knn(bf)=0.6 ratio=0.0 pose=1.6 tmpl=0.0 | nq=129 nt=906
+[SIFT profile] total=30.3ms grab=8.7 prep=2.5 sift_q=14.0 train=1.6 knn(bf)=1.1 ratio=0.1 pose=2.3 tmpl=0.0 | nq=205 nt=892
+[SIFT profile] total=22.6ms grab=7.8 prep=0.9 sift_q=9.2 train=1.7 knn(bf)=1.2 ratio=0.1 pose=1.8 tmpl=0.0 | nq=248 nt=913
+[SIFT profile] total=18.6ms grab=9.1 prep=1.0 sift_q=5.5 train=1.3 knn(bf)=0.7 ratio=0.1 pose=0.8 tmpl=0.0 | nq=279 nt=917
+[SIFT profile] total=19.7ms grab=3.9 prep=1.1 sift_q=8.6 train=1.6 knn(bf)=1.6 ratio=0.2 pose=2.6 tmpl=0.0 | nq=311 nt=900
+[SIFT profile] total=19.0ms grab=6.7 prep=0.9 sift_q=7.5 train=1.6 knn(bf)=0.9 ratio=0.1 pose=1.3 tmpl=0.0 | nq=319 nt=908
+[SIFT profile] total=18.0ms grab=3.7 prep=0.7 sift_q=8.6 train=1.3 knn(bf)=1.8 ratio=0.1 pose=1.8 tmpl=0.0 | nq=325 nt=871
+[SIFT profile] total=17.8ms grab=5.7 prep=1.2 sift_q=7.3 train=1.7 knn(bf)=0.7 ratio=0.1 pose=1.2 tmpl=0.0 | nq=330 nt=883
+[SIFT profile] total=20.2ms grab=6.5 prep=0.7 sift_q=6.7 train=2.0 knn(bf)=1.5 ratio=0.4 pose=2.3 tmpl=0.0 | nq=307 nt=889
+[SIFT profile] total=17.1ms grab=7.0 prep=0.9 sift_q=6.3 train=1.0 knn(bf)=0.9 ratio=0.1 pose=0.9 tmpl=0.0 | nq=312 nt=883
+[SIFT profile] total=22.9ms grab=9.7 prep=1.5 sift_q=8.7 train=1.0 knn(bf)=0.8 ratio=0.1 pose=0.9 tmpl=0.0 | nq=334 nt=883
+[SIFT profile] total=23.2ms grab=7.4 prep=1.2 sift_q=10.0 train=1.8 knn(bf)=1.3 ratio=0.2 pose=1.3 tmpl=0.0 | nq=342 nt=892
+[SIFT profile] total=24.5ms grab=10.3 prep=1.7 sift_q=8.0 train=1.5 knn(bf)=1.0 ratio=0.1 pose=1.7 tmpl=0.0 | nq=301 nt=895
+[SIFT profile] total=355.9ms grab=5.9 prep=0.9 sift_q=3.7 train=2.3 knn(bf)=0.7 ratio=0.0 pose=3.5 tmpl=338.8 | nq=64 nt=1730
+[SIFT profile] total=26.1ms grab=8.8 prep=1.7 sift_q=10.1 train=1.6 knn(bf)=1.0 ratio=0.1 pose=2.7 tmpl=0.0 | nq=254 nt=952
+[SIFT profile] total=26.4ms grab=11.5 prep=1.0 sift_q=7.5 train=1.4 knn(bf)=0.8 ratio=0.1 pose=4.0 tmpl=0.0 | nq=240 nt=955
+[SIFT profile] total=29.8ms grab=13.4 prep=1.2 sift_q=6.8 train=2.6 knn(bf)=0.7 ratio=0.1 pose=5.0 tmpl=0.0 | nq=249 nt=966
+[SIFT profile] total=20.5ms grab=6.7 prep=1.7 sift_q=7.6 train=1.1 knn(bf)=1.0 ratio=0.7 pose=1.6 tmpl=0.0 | nq=212 nt=988
+[SIFT profile] total=36.3ms grab=11.9 prep=3.0 sift_q=15.0 train=1.5 knn(bf)=1.4 ratio=0.2 pose=3.2 tmpl=0.0 | nq=264 nt=1011
+[SIFT profile] total=19.5ms grab=7.7 prep=0.9 sift_q=8.3 train=1.2 knn(bf)=0.6 ratio=0.1 pose=0.7 tmpl=0.0 | nq=260 nt=1037
+[SIFT profile] total=27.1ms grab=12.2 prep=1.1 sift_q=7.7 train=2.0 knn(bf)=0.9 ratio=0.1 pose=3.1 tmpl=0.0 | nq=284 nt=1007
+[SIFT profile] total=22.2ms grab=6.2 prep=1.4 sift_q=8.9 train=1.7 knn(bf)=1.1 ratio=0.1 pose=2.9 tmpl=0.0 | nq=275 nt=1085
+[SIFT profile] total=21.7ms grab=7.1 prep=1.4 sift_q=9.4 train=1.3 knn(bf)=1.3 ratio=0.1 pose=1.2 tmpl=0.0 | nq=295 nt=1133
+[SIFT profile] total=32.2ms grab=6.9 prep=1.2 sift_q=15.1 train=2.4 knn(bf)=2.1 ratio=0.2 pose=4.2 tmpl=0.0 | nq=338 nt=1232
+[SIFT profile] total=20.7ms grab=5.9 prep=1.0 sift_q=9.7 train=1.9 knn(bf)=1.1 ratio=0.1 pose=1.0 tmpl=0.0 | nq=340 nt=1261
+[SIFT profile] total=33.9ms grab=15.4 prep=1.5 sift_q=8.5 train=2.3 knn(bf)=4.2 ratio=0.1 pose=1.7 tmpl=0.0 | nq=329 nt=1355
+[SIFT profile] total=35.7ms grab=11.6 prep=1.1 sift_q=14.8 train=1.9 knn(bf)=2.0 ratio=0.2 pose=4.0 tmpl=0.0 | nq=301 nt=1417
+[SIFT profile] total=25.0ms grab=4.7 prep=1.4 sift_q=11.4 train=2.9 knn(bf)=1.4 ratio=0.2 pose=3.0 tmpl=0.0 | nq=317 nt=1410
+[SIFT profile] total=187.6ms grab=6.3 prep=1.0 sift_q=7.3 train=1.8 knn(bf)=1.5 ratio=0.1 pose=72.1 tmpl=97.3 | nq=247 nt=1581
+[SIFT profile] total=29.6ms grab=10.1 prep=0.8 sift_q=11.9 train=2.0 knn(bf)=3.2 ratio=0.1 pose=1.4 tmpl=0.0 | nq=248 nt=1932
+[SIFT profile] total=34.3ms grab=14.3 prep=1.6 sift_q=12.0 train=2.7 knn(bf)=1.9 ratio=0.1 pose=1.7 tmpl=0.0 | nq=260 nt=1932
+[SIFT profile] total=31.5ms grab=12.1 prep=2.1 sift_q=11.7 train=1.9 knn(bf)=1.5 ratio=0.1 pose=2.0 tmpl=0.0 | nq=274 nt=1927
+[SIFT profile] total=31.4ms grab=9.9 prep=1.4 sift_q=11.3 train=3.5 knn(bf)=2.8 ratio=0.1 pose=2.4 tmpl=0.0 | nq=269 nt=1924
+[SIFT profile] total=115.3ms grab=8.6 prep=0.8 sift_q=2.6 train=2.1 knn(bf)=0.0 ratio=0.0 pose=0.0 tmpl=101.2 | nq=0 nt=2544
+[SIFT profile] total=37.5ms grab=12.6 prep=2.0 sift_q=15.9 train=1.9 knn(bf)=1.3 ratio=0.1 pose=3.5 tmpl=0.0 | nq=286 nt=1211
+[SIFT profile] total=21.2ms grab=7.8 prep=1.1 sift_q=7.9 train=1.7 knn(bf)=1.1 ratio=0.1 pose=1.5 tmpl=0.0 | nq=292 nt=1190
+[SIFT profile] total=21.5ms grab=9.1 prep=1.1 sift_q=5.3 train=1.9 knn(bf)=1.0 ratio=0.1 pose=3.0 tmpl=0.0 | nq=298 nt=1166
+[SIFT profile] total=26.1ms grab=11.5 prep=0.9 sift_q=7.9 train=3.8 knn(bf)=1.1 ratio=0.1 pose=0.8 tmpl=0.0 | nq=323 nt=1113
+[SIFT profile] total=20.0ms grab=5.7 prep=1.3 sift_q=8.8 train=1.5 knn(bf)=1.0 ratio=0.0 pose=1.7 tmpl=0.0 | nq=285 nt=1197
+[SIFT profile] total=24.5ms grab=7.9 prep=1.3 sift_q=9.0 train=2.7 knn(bf)=1.9 ratio=0.1 pose=1.5 tmpl=0.0 | nq=277 nt=1217
+[SIFT profile] total=23.1ms grab=9.1 prep=0.6 sift_q=8.2 train=2.1 knn(bf)=1.3 ratio=0.2 pose=1.5 tmpl=0.0 | nq=281 nt=1229
+[SIFT profile] total=23.5ms grab=9.5 prep=1.3 sift_q=9.9 train=0.9 knn(bf)=0.9 ratio=0.1 pose=0.9 tmpl=0.0 | nq=308 nt=1213
+[SIFT profile] total=25.4ms grab=6.9 prep=2.2 sift_q=10.5 train=2.5 knn(bf)=2.2 ratio=0.2 pose=1.0 tmpl=0.0 | nq=309 nt=1180
+[SIFT profile] total=18.3ms grab=6.9 prep=1.3 sift_q=7.1 train=1.1 knn(bf)=1.1 ratio=0.1 pose=0.8 tmpl=0.0 | nq=299 nt=1155
+[SIFT profile] total=23.0ms grab=10.2 prep=1.0 sift_q=7.4 train=1.7 knn(bf)=1.1 ratio=0.1 pose=1.4 tmpl=0.0 | nq=293 nt=1136
+[SIFT profile] total=2274.8ms grab=4.1 prep=1.4 sift_q=12.2 train=0.0 knn(flann)=2254.9 ratio=0.2 pose=2.0 tmpl=0.0 | nq=267 nt=119507
+[SIFT profile] total=16.0ms grab=6.5 prep=1.1 sift_q=4.3 train=1.3 knn(bf)=0.8 ratio=0.0 pose=1.9 tmpl=0.0 | nq=43 nt=1269
+[SIFT profile] total=24.5ms grab=12.0 prep=1.6 sift_q=7.3 train=1.4 knn(bf)=1.0 ratio=0.1 pose=1.2 tmpl=0.0 | nq=318 nt=966
+[SIFT profile] total=14.5ms grab=7.0 prep=0.6 sift_q=3.7 train=0.7 knn(bf)=1.0 ratio=0.1 pose=1.2 tmpl=0.0 | nq=325 nt=969
+[SIFT profile] total=21.4ms grab=10.7 prep=1.0 sift_q=7.4 train=0.7 knn(bf)=0.7 ratio=0.1 pose=0.7 tmpl=0.0 | nq=278 nt=991
+[SIFT profile] total=25.1ms grab=9.3 prep=1.5 sift_q=9.6 train=1.5 knn(bf)=1.4 ratio=0.3 pose=1.4 tmpl=0.0 | nq=305 nt=989
+[SIFT profile] total=22.5ms grab=6.4 prep=1.3 sift_q=7.9 train=1.6 knn(bf)=1.3 ratio=0.1 pose=3.9 tmpl=0.0 | nq=299 nt=1859
+[SIFT profile] total=30.3ms grab=14.3 prep=1.0 sift_q=7.7 train=2.3 knn(bf)=1.9 ratio=0.1 pose=3.0 tmpl=0.0 | nq=271 nt=1589
+[SIFT profile] total=28.1ms grab=8.4 prep=1.9 sift_q=10.2 train=1.9 knn(bf)=1.2 ratio=0.1 pose=4.3 tmpl=0.0 | nq=179 nt=1044
+[SIFT profile] total=18.6ms grab=6.4 prep=1.4 sift_q=4.8 train=1.3 knn(bf)=0.6 ratio=0.0 pose=4.0 tmpl=0.0 | nq=95 nt=1020
+[SIFT profile] total=18.7ms grab=10.8 prep=0.8 sift_q=4.0 train=1.0 knn(bf)=0.3 ratio=0.0 pose=1.6 tmpl=0.0 | nq=108 nt=668
+[SIFT profile] total=13.3ms grab=6.5 prep=1.1 sift_q=3.0 train=1.0 knn(bf)=0.3 ratio=0.0 pose=1.3 tmpl=0.0 | nq=98 nt=806
+[SIFT profile] total=112.4ms grab=8.6 prep=2.5 sift_q=10.4 train=1.3 knn(bf)=0.9 ratio=0.0 pose=8.5 tmpl=80.0 | nq=91 nt=779
+[SIFT profile] total=27.0ms grab=9.0 prep=1.1 sift_q=7.2 train=1.8 knn(bf)=0.7 ratio=0.1 pose=7.0 tmpl=0.0 | nq=106 nt=687
+[SIFT profile] total=16.0ms grab=6.0 prep=1.1 sift_q=6.5 train=1.2 knn(bf)=0.3 ratio=0.0 pose=0.9 tmpl=0.0 | nq=75 nt=543
+[SIFT profile] total=35.4ms grab=11.0 prep=1.8 sift_q=14.5 train=3.6 knn(bf)=3.1 ratio=0.2 pose=1.1 tmpl=0.0 | nq=306 nt=1938
+[SIFT profile] total=23.0ms grab=9.3 prep=1.3 sift_q=8.2 train=1.4 knn(bf)=2.0 ratio=0.1 pose=0.8 tmpl=0.0 | nq=305 nt=1939
+[SIFT profile] total=22.2ms grab=6.3 prep=1.0 sift_q=10.0 train=1.6 knn(bf)=2.2 ratio=0.1 pose=1.0 tmpl=0.0 | nq=316 nt=1967
+[SIFT profile] total=26.1ms grab=10.3 prep=0.6 sift_q=10.2 train=2.5 knn(bf)=1.2 ratio=0.1 pose=1.1 tmpl=0.0 | nq=321 nt=1995
+[SIFT profile] total=21.5ms grab=9.6 prep=0.8 sift_q=6.5 train=2.0 knn(bf)=1.5 ratio=0.1 pose=0.9 tmpl=0.0 | nq=336 nt=1878
+[SIFT profile] total=12.2ms grab=4.2 prep=0.7 sift_q=4.2 train=1.1 knn(bf)=1.2 ratio=0.1 pose=0.6 tmpl=0.0 | nq=306 nt=1874
+[SIFT profile] total=26.7ms grab=10.0 prep=0.9 sift_q=7.6 train=3.4 knn(bf)=3.3 ratio=0.2 pose=1.3 tmpl=0.0 | nq=339 nt=1799
+[SIFT profile] total=23.8ms grab=10.3 prep=1.1 sift_q=7.5 train=1.5 knn(bf)=1.9 ratio=0.1 pose=1.3 tmpl=0.0 | nq=335 nt=1766
+[SIFT profile] total=18.5ms grab=5.7 prep=0.8 sift_q=6.8 train=1.6 knn(bf)=2.1 ratio=0.1 pose=1.4 tmpl=0.0 | nq=326 nt=1536
+[SIFT profile] total=27.4ms grab=8.2 prep=2.2 sift_q=11.2 train=1.7 knn(bf)=2.3 ratio=0.1 pose=1.5 tmpl=0.0 | nq=303 nt=1496
+[SIFT profile] total=25.6ms grab=9.3 prep=1.1 sift_q=9.9 train=2.3 knn(bf)=1.3 ratio=0.1 pose=1.5 tmpl=0.0 | nq=267 nt=1463
+[SIFT profile] total=22.2ms grab=10.2 prep=1.0 sift_q=4.8 train=1.6 knn(bf)=0.8 ratio=0.1 pose=3.7 tmpl=0.0 | nq=194 nt=1385
+[SIFT profile] total=27.8ms grab=6.7 prep=1.0 sift_q=12.6 train=1.7 knn(bf)=1.2 ratio=0.1 pose=4.4 tmpl=0.0 | nq=212 nt=1203
+[SIFT profile] total=15.2ms grab=5.9 prep=0.7 sift_q=4.8 train=1.0 knn(bf)=0.5 ratio=0.0 pose=2.2 tmpl=0.0 | nq=139 nt=1064
+[SIFT profile] total=16.3ms grab=6.0 prep=1.0 sift_q=7.0 train=1.0 knn(bf)=0.4 ratio=0.0 pose=0.8 tmpl=0.0 | nq=143 nt=746
+[SIFT profile] total=22.7ms grab=8.9 prep=1.3 sift_q=8.8 train=1.5 knn(bf)=0.7 ratio=0.1 pose=1.4 tmpl=0.0 | nq=173 nt=721
+[SIFT profile] total=17.8ms grab=5.4 prep=1.9 sift_q=8.2 train=1.1 knn(bf)=0.5 ratio=0.0 pose=0.8 tmpl=0.0 | nq=159 nt=775
+[SIFT profile] total=20.2ms grab=9.7 prep=0.9 sift_q=6.5 train=1.0 knn(bf)=0.6 ratio=0.1 pose=1.3 tmpl=0.0 | nq=173 nt=893
+[SIFT profile] total=23.8ms grab=9.8 prep=0.7 sift_q=8.0 train=2.1 knn(bf)=1.4 ratio=0.1 pose=1.7 tmpl=0.0 | nq=217 nt=1241
+[SIFT profile] total=24.1ms grab=9.2 prep=1.2 sift_q=8.0 train=1.9 knn(bf)=1.3 ratio=0.1 pose=2.4 tmpl=0.0 | nq=234 nt=1395
+[SIFT profile] total=23.9ms grab=11.5 prep=1.2 sift_q=6.0 train=2.0 knn(bf)=1.2 ratio=0.1 pose=1.8 tmpl=0.0 | nq=238 nt=1454
+[SIFT profile] total=32.0ms grab=6.3 prep=0.9 sift_q=6.4 train=1.8 knn(bf)=14.5 ratio=0.1 pose=2.0 tmpl=0.0 | nq=248 nt=1420
+[SIFT profile] total=21.1ms grab=8.7 prep=0.6 sift_q=7.6 train=1.5 knn(bf)=1.1 ratio=0.1 pose=1.4 tmpl=0.0 | nq=232 nt=1304
+[SIFT profile] total=32.4ms grab=11.4 prep=2.3 sift_q=11.3 train=1.9 knn(bf)=2.2 ratio=0.1 pose=3.2 tmpl=0.0 | nq=181 nt=1389
+[SIFT profile] total=25.8ms grab=6.4 prep=1.1 sift_q=9.2 train=2.5 knn(bf)=1.6 ratio=0.1 pose=4.9 tmpl=0.0 | nq=204 nt=1489
+[SIFT profile] total=27.1ms grab=9.2 prep=1.4 sift_q=10.6 train=1.8 knn(bf)=1.7 ratio=0.1 pose=2.3 tmpl=0.0 | nq=210 nt=1507
+[SIFT profile] total=20.4ms grab=7.6 prep=0.6 sift_q=5.5 train=2.7 knn(bf)=1.2 ratio=0.1 pose=2.7 tmpl=0.0 | nq=225 nt=1468
+[SIFT profile] total=28.6ms grab=8.4 prep=1.4 sift_q=11.3 train=2.6 knn(bf)=2.4 ratio=0.1 pose=2.3 tmpl=0.0 | nq=255 nt=1440
+[SIFT profile] total=19.8ms grab=8.1 prep=1.0 sift_q=6.8 train=1.3 knn(bf)=1.0 ratio=0.1 pose=1.5 tmpl=0.0 | nq=266 nt=1463
+[SIFT profile] total=27.8ms grab=11.5 prep=0.9 sift_q=8.9 train=2.3 knn(bf)=1.6 ratio=0.1 pose=2.6 tmpl=0.0 | nq=287 nt=1419
+[SIFT profile] total=24.0ms grab=8.1 prep=1.3 sift_q=9.8 train=2.3 knn(bf)=1.5 ratio=0.1 pose=1.0 tmpl=0.0 | nq=279 nt=1470
+[SIFT profile] total=33.3ms grab=9.4 prep=0.7 sift_q=11.1 train=3.1 knn(bf)=1.3 ratio=0.1 pose=7.5 tmpl=0.0 | nq=252 nt=1705
+[SIFT profile] total=29.0ms grab=5.0 prep=1.0 sift_q=13.4 train=3.1 knn(bf)=2.9 ratio=0.1 pose=3.6 tmpl=0.0 | nq=220 nt=1821
+[SIFT profile] total=17.8ms grab=5.1 prep=0.9 sift_q=5.8 train=1.5 knn(bf)=1.2 ratio=0.1 pose=3.2 tmpl=0.0 | nq=212 nt=1915
+[SIFT profile] total=21.7ms grab=8.7 prep=1.5 sift_q=6.0 train=1.5 knn(bf)=1.2 ratio=0.0 pose=2.7 tmpl=0.0 | nq=207 nt=1891
+[SIFT profile] total=93.4ms grab=5.3 prep=1.0 sift_q=4.2 train=1.4 knn(bf)=0.9 ratio=0.1 pose=17.5 tmpl=63.2 | nq=180 nt=1972
+[SIFT profile] total=30.3ms grab=7.0 prep=2.0 sift_q=12.8 train=2.8 knn(bf)=3.8 ratio=0.2 pose=1.7 tmpl=0.0 | nq=330 nt=2921
+[SIFT profile] total=23.6ms grab=7.0 prep=1.2 sift_q=8.1 train=2.3 knn(bf)=3.7 ratio=0.1 pose=1.2 tmpl=0.0 | nq=334 nt=3001
+[SIFT profile] total=28.5ms grab=7.4 prep=1.9 sift_q=9.5 train=2.8 knn(bf)=4.6 ratio=0.2 pose=2.0 tmpl=0.0 | nq=340 nt=3003
+[SIFT profile] total=26.5ms grab=8.8 prep=1.3 sift_q=9.2 train=2.8 knn(bf)=3.2 ratio=0.1 pose=1.0 tmpl=0.0 | nq=336 nt=3003
+
+[SIFT profile] --- session 2026-04-13 12:22:36 ---
+[SIFT profile] total=1762.2ms grab=10.5 prep=1.4 sift_q=8.7 train=0.0 knn(flann)=1740.4 ratio=0.1 pose=1.1 tmpl=0.0 | nq=340 nt=119506
+[SIFT profile] total=27.9ms grab=12.5 prep=1.5 sift_q=7.9 train=2.1 knn(bf)=2.8 ratio=0.1 pose=1.0 tmpl=0.0 | nq=341 nt=3040
+[SIFT profile] total=35.6ms grab=9.2 prep=1.5 sift_q=14.5 train=3.5 knn(bf)=5.5 ratio=0.2 pose=1.1 tmpl=0.0 | nq=321 nt=3067
+[SIFT profile] total=30.2ms grab=8.5 prep=1.9 sift_q=11.7 train=2.4 knn(bf)=4.3 ratio=0.2 pose=1.0 tmpl=0.0 | nq=327 nt=2962
+[SIFT profile] total=200.1ms grab=9.4 prep=1.9 sift_q=11.7 train=2.9 knn(bf)=2.7 ratio=0.1 pose=26.8 tmpl=144.5 | nq=347 nt=2869
+[SIFT profile] total=30.8ms grab=11.2 prep=1.5 sift_q=10.3 train=3.2 knn(bf)=3.1 ratio=0.1 pose=1.3 tmpl=0.0 | nq=333 nt=2613
+[SIFT profile] total=23.8ms grab=12.2 prep=0.9 sift_q=5.0 train=2.1 knn(bf)=1.9 ratio=0.1 pose=1.4 tmpl=0.0 | nq=313 nt=2427
+[SIFT profile] total=27.2ms grab=9.8 prep=2.6 sift_q=8.4 train=2.0 knn(bf)=2.4 ratio=0.1 pose=2.0 tmpl=0.0 | nq=292 nt=2280
+[SIFT profile] total=25.9ms grab=8.2 prep=1.1 sift_q=9.8 train=2.3 knn(bf)=2.6 ratio=0.1 pose=1.7 tmpl=0.0 | nq=304 nt=2280
+[SIFT profile] total=30.2ms grab=11.6 prep=2.0 sift_q=9.7 train=2.9 knn(bf)=2.2 ratio=0.1 pose=1.6 tmpl=0.0 | nq=303 nt=2280
+[SIFT profile] total=449.6ms grab=9.6 prep=1.2 sift_q=11.5 train=3.4 knn(flann)=74.5 ratio=0.1 pose=128.1 tmpl=221.3 | nq=248 nt=3879
+[SIFT profile] total=18.4ms grab=3.2 prep=1.4 sift_q=6.4 train=2.2 knn(bf)=0.8 ratio=0.1 pose=4.3 tmpl=0.0 | nq=251 nt=1539
+[SIFT profile] total=428.8ms grab=6.5 prep=1.7 sift_q=5.9 train=1.7 knn(flann)=0.0 ratio=0.0 pose=0.0 tmpl=413.0 | nq=0 nt=3584
+[SIFT profile] total=25.9ms grab=10.2 prep=2.1 sift_q=8.2 train=1.6 knn(bf)=2.0 ratio=0.1 pose=1.6 tmpl=0.0 | nq=330 nt=2053
+[SIFT profile] total=172.9ms grab=9.0 prep=0.9 sift_q=6.1 train=2.2 knn(flann)=49.0 ratio=0.0 pose=14.8 tmpl=90.9 | nq=186 nt=3564
+[SIFT profile] total=29.6ms grab=7.5 prep=1.6 sift_q=11.2 train=3.5 knn(bf)=1.7 ratio=0.1 pose=4.0 tmpl=0.0 | nq=274 nt=1279
+[SIFT profile] total=20.9ms grab=8.6 prep=1.5 sift_q=7.1 train=1.3 knn(bf)=1.2 ratio=0.1 pose=1.1 tmpl=0.0 | nq=252 nt=1267
+[SIFT profile] total=17.3ms grab=5.3 prep=1.7 sift_q=6.4 train=1.2 knn(bf)=0.8 ratio=0.1 pose=1.9 tmpl=0.0 | nq=270 nt=1224
+[SIFT profile] total=28.3ms grab=7.8 prep=2.2 sift_q=13.8 train=1.5 knn(bf)=1.2 ratio=0.1 pose=1.7 tmpl=0.0 | nq=289 nt=1216
+[SIFT profile] total=44.5ms grab=13.5 prep=4.1 sift_q=17.5 train=2.5 knn(bf)=2.5 ratio=0.2 pose=4.1 tmpl=0.0 | nq=270 nt=1277
+[SIFT profile] total=33.0ms grab=9.5 prep=1.6 sift_q=8.5 train=1.7 knn(bf)=1.6 ratio=0.1 pose=9.9 tmpl=0.0 | nq=206 nt=1119
+[SIFT profile] total=33.0ms grab=14.4 prep=1.8 sift_q=9.9 train=1.4 knn(bf)=0.9 ratio=0.1 pose=4.4 tmpl=0.0 | nq=210 nt=1007
+[SIFT profile] total=115.2ms grab=7.5 prep=3.1 sift_q=9.7 train=1.2 knn(bf)=0.7 ratio=0.1 pose=11.0 tmpl=81.9 | nq=171 nt=782
+[SIFT profile] total=22.9ms grab=6.7 prep=2.0 sift_q=8.7 train=1.6 knn(bf)=1.5 ratio=0.2 pose=2.2 tmpl=0.0 | nq=328 nt=2161
+[SIFT profile] total=34.7ms grab=12.4 prep=0.9 sift_q=11.1 train=4.5 knn(bf)=3.5 ratio=0.2 pose=2.0 tmpl=0.0 | nq=323 nt=2197
+[SIFT profile] total=28.3ms grab=10.2 prep=1.7 sift_q=8.0 train=2.8 knn(bf)=3.7 ratio=0.2 pose=1.7 tmpl=0.0 | nq=343 nt=2210
+[SIFT profile] total=19.3ms grab=8.7 prep=0.9 sift_q=4.5 train=1.4 knn(bf)=2.3 ratio=0.1 pose=1.4 tmpl=0.0 | nq=340 nt=2327
+[SIFT profile] total=24.4ms grab=7.4 prep=2.0 sift_q=9.1 train=2.3 knn(bf)=2.2 ratio=0.1 pose=1.2 tmpl=0.0 | nq=334 nt=2262
+[SIFT profile] total=29.9ms grab=8.4 prep=2.7 sift_q=9.9 train=3.7 knn(bf)=1.7 ratio=0.2 pose=3.2 tmpl=0.0 | nq=323 nt=2183
+[SIFT profile] total=21.7ms grab=8.1 prep=1.0 sift_q=7.9 train=1.7 knn(bf)=1.9 ratio=0.1 pose=0.9 tmpl=0.0 | nq=313 nt=2212
+[SIFT profile] total=26.2ms grab=10.6 prep=1.5 sift_q=9.6 train=1.4 knn(bf)=2.2 ratio=0.1 pose=0.8 tmpl=0.0 | nq=289 nt=2231
+[SIFT profile] total=31.5ms grab=8.5 prep=3.3 sift_q=13.0 train=2.5 knn(bf)=2.2 ratio=0.1 pose=1.9 tmpl=0.0 | nq=294 nt=2260
+[SIFT profile] total=24.2ms grab=9.3 prep=1.3 sift_q=7.1 train=2.5 knn(bf)=2.5 ratio=0.1 pose=1.5 tmpl=0.0 | nq=269 nt=2246
+[SIFT profile] total=20.3ms grab=6.5 prep=1.6 sift_q=6.7 train=2.4 knn(bf)=1.5 ratio=0.1 pose=1.5 tmpl=0.0 | nq=270 nt=2256
+[SIFT profile] total=31.0ms grab=10.5 prep=1.9 sift_q=12.8 train=1.8 knn(bf)=1.1 ratio=0.1 pose=2.8 tmpl=0.0 | nq=263 nt=2278
+[SIFT profile] total=33.1ms grab=8.1 prep=1.4 sift_q=13.0 train=2.4 knn(bf)=1.7 ratio=0.3 pose=6.1 tmpl=0.0 | nq=279 nt=2221
+[SIFT profile] total=25.6ms grab=6.1 prep=1.8 sift_q=10.6 train=1.5 knn(bf)=1.8 ratio=0.1 pose=3.6 tmpl=0.0 | nq=287 nt=2097
+[SIFT profile] total=28.2ms grab=12.5 prep=1.4 sift_q=8.9 train=1.9 knn(bf)=1.8 ratio=0.1 pose=1.5 tmpl=0.0 | nq=256 nt=1939
+[SIFT profile] total=26.2ms grab=6.1 prep=1.6 sift_q=8.0 train=1.3 knn(bf)=1.3 ratio=0.1 pose=7.7 tmpl=0.0 | nq=265 nt=1850
+[SIFT profile] total=15.0ms grab=6.5 prep=0.9 sift_q=4.0 train=1.0 knn(bf)=0.7 ratio=0.1 pose=1.8 tmpl=0.0 | nq=201 nt=727
+[SIFT profile] total=443.9ms grab=8.6 prep=1.0 sift_q=4.1 train=1.6 knn(bf)=0.0 ratio=0.0 pose=0.0 tmpl=428.5 | nq=0 nt=2227
+[SIFT profile] total=33.8ms grab=7.7 prep=2.5 sift_q=16.5 train=2.5 knn(bf)=3.2 ratio=0.1 pose=1.3 tmpl=0.0 | nq=323 nt=2876
+[SIFT profile] total=29.5ms grab=10.7 prep=1.7 sift_q=11.7 train=1.8 knn(bf)=2.4 ratio=0.1 pose=1.0 tmpl=0.0 | nq=315 nt=2679
+[SIFT profile] total=26.4ms grab=8.2 prep=2.4 sift_q=10.1 train=1.7 knn(bf)=1.9 ratio=0.2 pose=1.7 tmpl=0.0 | nq=323 nt=2404
+[SIFT profile] total=25.9ms grab=6.9 prep=1.9 sift_q=10.2 train=3.2 knn(bf)=2.5 ratio=0.2 pose=0.9 tmpl=0.0 | nq=332 nt=2122
+[SIFT profile] total=31.1ms grab=10.7 prep=1.0 sift_q=9.9 train=3.8 knn(bf)=3.2 ratio=0.1 pose=2.2 tmpl=0.0 | nq=325 nt=1986
+[SIFT profile] total=24.9ms grab=8.8 prep=2.0 sift_q=9.6 train=2.2 knn(bf)=1.5 ratio=0.1 pose=0.8 tmpl=0.0 | nq=329 nt=1928
+[SIFT profile] total=24.5ms grab=6.8 prep=2.2 sift_q=11.4 train=2.0 knn(bf)=1.2 ratio=0.1 pose=0.7 tmpl=0.0 | nq=308 nt=1848
+[SIFT profile] total=29.6ms grab=9.4 prep=1.4 sift_q=13.7 train=1.5 knn(bf)=1.6 ratio=0.1 pose=1.8 tmpl=0.0 | nq=291 nt=1838
+[SIFT profile] total=27.3ms grab=6.0 prep=2.4 sift_q=10.2 train=3.4 knn(bf)=3.1 ratio=0.1 pose=2.0 tmpl=0.0 | nq=308 nt=1833
+[SIFT profile] total=22.0ms grab=5.9 prep=2.1 sift_q=8.2 train=1.7 knn(bf)=2.3 ratio=0.1 pose=1.6 tmpl=0.0 | nq=286 nt=1830
+[SIFT profile] total=35.1ms grab=13.5 prep=1.8 sift_q=14.3 train=2.0 knn(bf)=1.1 ratio=0.1 pose=2.4 tmpl=0.0 | nq=291 nt=1776
+[SIFT profile] total=26.8ms grab=8.1 prep=1.2 sift_q=10.4 train=2.0 knn(bf)=1.1 ratio=0.1 pose=3.9 tmpl=0.0 | nq=255 nt=1555
+[SIFT profile] total=24.4ms grab=6.3 prep=1.6 sift_q=5.0 train=1.6 knn(bf)=8.1 ratio=0.1 pose=1.7 tmpl=0.0 | nq=268 nt=1500
+[SIFT profile] total=31.1ms grab=10.3 prep=1.6 sift_q=8.8 train=2.5 knn(bf)=1.5 ratio=0.1 pose=6.2 tmpl=0.0 | nq=249 nt=1315
+[SIFT profile] total=142.5ms grab=10.7 prep=1.8 sift_q=7.2 train=2.5 knn(bf)=1.7 ratio=0.1 pose=12.3 tmpl=106.3 | nq=173 nt=1795
+[SIFT profile] total=19.6ms grab=5.3 prep=1.5 sift_q=8.4 train=1.3 knn(bf)=0.9 ratio=0.1 pose=2.2 tmpl=0.0 | nq=240 nt=1276
+[SIFT profile] total=22.5ms grab=6.1 prep=3.3 sift_q=8.9 train=1.3 knn(bf)=0.9 ratio=0.1 pose=1.9 tmpl=0.0 | nq=239 nt=1273
+[SIFT profile] total=29.2ms grab=10.0 prep=3.4 sift_q=11.1 train=1.3 knn(bf)=1.2 ratio=0.1 pose=2.2 tmpl=0.0 | nq=269 nt=1240
+[SIFT profile] total=24.6ms grab=10.2 prep=1.6 sift_q=8.1 train=1.8 knn(bf)=1.0 ratio=0.1 pose=1.8 tmpl=0.0 | nq=267 nt=1259
+[SIFT profile] total=27.4ms grab=6.4 prep=2.1 sift_q=12.2 train=1.6 knn(bf)=1.5 ratio=0.1 pose=3.5 tmpl=0.0 | nq=288 nt=1325
+[SIFT profile] total=29.7ms grab=13.0 prep=1.5 sift_q=11.1 train=1.0 knn(bf)=0.7 ratio=0.1 pose=2.3 tmpl=0.0 | nq=251 nt=1088
+[SIFT profile] total=184.6ms grab=12.4 prep=4.2 sift_q=10.5 train=1.6 knn(bf)=1.4 ratio=0.1 pose=21.7 tmpl=132.6 | nq=150 nt=1224
+[SIFT profile] total=31.8ms grab=5.5 prep=2.7 sift_q=12.4 train=1.7 knn(bf)=0.8 ratio=0.1 pose=8.6 tmpl=0.0 | nq=175 nt=1009
+
+[SIFT profile] --- session 2026-04-13 12:32:13 ---
+[SIFT profile] total=1661.0ms grab=10.4 prep=1.7 sift_q=9.8 train=0.0 knn(flann)=1636.4 ratio=0.1 pose=2.6 tmpl=0.0 | nq=346 nt=119506
+[SIFT profile] total=19.7ms grab=4.6 prep=1.3 sift_q=8.1 train=1.7 knn(bf)=2.0 ratio=0.1 pose=1.7 tmpl=0.0 | nq=345 nt=2071
+[SIFT profile] total=25.4ms grab=8.4 prep=1.5 sift_q=10.8 train=1.7 knn(bf)=1.9 ratio=0.1 pose=1.0 tmpl=0.0 | nq=334 nt=2055
+[SIFT profile] total=32.7ms grab=10.6 prep=2.4 sift_q=11.8 train=1.8 knn(bf)=2.2 ratio=0.1 pose=3.7 tmpl=0.0 | nq=313 nt=1645
+[SIFT profile] total=30.8ms grab=9.5 prep=1.0 sift_q=11.0 train=3.4 knn(bf)=2.5 ratio=0.1 pose=3.3 tmpl=0.0 | nq=253 nt=1288
+[SIFT profile] total=170.7ms grab=10.0 prep=1.1 sift_q=4.4 train=1.2 knn(bf)=1.4 ratio=0.0 pose=24.6 tmpl=127.9 | nq=177 nt=1663
+[SIFT profile] total=772.5ms grab=13.1 prep=2.5 sift_q=12.7 train=4.2 knn(flann)=114.7 ratio=0.1 pose=1.9 tmpl=623.3 | nq=204 nt=6134
+[SIFT profile] total=35.1ms grab=13.6 prep=4.1 sift_q=13.5 train=1.5 knn(bf)=0.6 ratio=0.1 pose=1.6 tmpl=0.0 | nq=219 nt=608
+[SIFT profile] total=23.0ms grab=8.3 prep=2.2 sift_q=9.3 train=1.1 knn(bf)=0.6 ratio=0.1 pose=1.3 tmpl=0.0 | nq=195 nt=613
+[SIFT profile] total=34.6ms grab=13.4 prep=3.2 sift_q=14.4 train=1.2 knn(bf)=0.5 ratio=0.1 pose=1.8 tmpl=0.0 | nq=167 nt=531
+[SIFT profile] total=212.4ms grab=7.3 prep=4.3 sift_q=13.8 train=1.3 knn(bf)=0.8 ratio=0.1 pose=16.9 tmpl=168.0 | nq=130 nt=758
+[SIFT profile] total=42.9ms grab=10.0 prep=3.0 sift_q=23.4 train=2.9 knn(bf)=2.0 ratio=0.1 pose=1.4 tmpl=0.0 | nq=304 nt=2237
+[SIFT profile] total=30.5ms grab=8.5 prep=1.9 sift_q=14.5 train=2.4 knn(bf)=2.3 ratio=0.1 pose=0.8 tmpl=0.0 | nq=320 nt=2204
+[SIFT profile] total=27.4ms grab=9.1 prep=2.7 sift_q=10.4 train=1.9 knn(bf)=1.4 ratio=0.1 pose=1.6 tmpl=0.0 | nq=318 nt=2195
+[SIFT profile] total=27.2ms grab=12.7 prep=1.4 sift_q=8.2 train=1.2 knn(bf)=1.6 ratio=0.1 pose=1.9 tmpl=0.0 | nq=290 nt=2230
+[SIFT profile] total=29.5ms grab=10.8 prep=2.0 sift_q=10.6 train=2.3 knn(bf)=1.7 ratio=0.1 pose=1.9 tmpl=0.0 | nq=281 nt=2225
+[SIFT profile] total=26.7ms grab=10.2 prep=1.3 sift_q=8.0 train=2.1 knn(bf)=2.2 ratio=0.1 pose=2.8 tmpl=0.0 | nq=290 nt=2281
+[SIFT profile] total=30.9ms grab=6.6 prep=1.6 sift_q=7.5 train=1.3 knn(bf)=1.6 ratio=0.1 pose=12.1 tmpl=0.0 | nq=288 nt=2030
+[SIFT profile] total=25.8ms grab=10.8 prep=1.5 sift_q=7.5 train=1.2 knn(bf)=1.6 ratio=0.1 pose=3.1 tmpl=0.0 | nq=279 nt=1592
+[SIFT profile] total=24.4ms grab=10.1 prep=1.6 sift_q=8.0 train=1.0 knn(bf)=1.7 ratio=0.1 pose=1.9 tmpl=0.0 | nq=300 nt=1411
+[SIFT profile] total=21.1ms grab=5.6 prep=1.5 sift_q=8.1 train=1.7 knn(bf)=1.0 ratio=0.1 pose=3.1 tmpl=0.0 | nq=291 nt=1230
+[SIFT profile] total=19.5ms grab=7.6 prep=1.4 sift_q=5.3 train=1.1 knn(bf)=0.8 ratio=0.1 pose=3.1 tmpl=0.0 | nq=280 nt=1142
+[SIFT profile] total=22.2ms grab=7.5 prep=1.3 sift_q=8.9 train=0.9 knn(bf)=0.8 ratio=0.1 pose=2.6 tmpl=0.0 | nq=306 nt=1096
+[SIFT profile] total=275.4ms grab=11.7 prep=2.1 sift_q=17.1 train=3.9 knn(bf)=5.2 ratio=0.2 pose=14.1 tmpl=221.0 | nq=323 nt=2482
+[SIFT profile] total=26.9ms grab=13.1 prep=1.8 sift_q=8.6 train=0.9 knn(bf)=0.7 ratio=0.1 pose=1.9 tmpl=0.0 | nq=305 nt=680
+[SIFT profile] total=27.6ms grab=10.6 prep=2.3 sift_q=9.4 train=1.0 knn(bf)=0.7 ratio=0.1 pose=3.4 tmpl=0.0 | nq=306 nt=651
+[SIFT profile] total=31.8ms grab=11.8 prep=1.8 sift_q=11.1 train=1.2 knn(bf)=0.8 ratio=0.1 pose=4.8 tmpl=0.0 | nq=262 nt=550
+[SIFT profile] total=144.8ms grab=11.2 prep=1.7 sift_q=10.6 train=1.7 knn(bf)=0.7 ratio=0.1 pose=6.7 tmpl=112.0 | nq=212 nt=675
+[SIFT profile] total=27.6ms grab=8.7 prep=1.4 sift_q=10.6 train=1.6 knn(bf)=1.0 ratio=0.1 pose=4.1 tmpl=0.0 | nq=309 nt=960
+[SIFT profile] total=20.9ms grab=4.1 prep=1.6 sift_q=8.7 train=1.2 knn(bf)=1.2 ratio=0.1 pose=3.7 tmpl=0.0 | nq=308 nt=960
+[SIFT profile] total=197.7ms grab=4.9 prep=1.2 sift_q=6.5 train=0.8 knn(bf)=0.8 ratio=0.1 pose=69.5 tmpl=113.8 | nq=276 nt=1067
+[SIFT profile] total=36.3ms grab=10.6 prep=3.0 sift_q=16.4 train=2.0 knn(bf)=1.2 ratio=0.1 pose=3.0 tmpl=0.0 | nq=253 nt=1280
+[SIFT profile] total=21.1ms grab=10.6 prep=1.0 sift_q=5.2 train=1.3 knn(bf)=1.2 ratio=0.1 pose=1.8 tmpl=0.0 | nq=268 nt=1278
+[SIFT profile] total=27.1ms grab=10.8 prep=1.6 sift_q=8.9 train=1.8 knn(bf)=1.8 ratio=0.2 pose=1.9 tmpl=0.0 | nq=289 nt=1202
+[SIFT profile] total=17.5ms grab=6.5 prep=1.5 sift_q=5.3 train=1.0 knn(bf)=1.5 ratio=0.1 pose=1.6 tmpl=0.0 | nq=273 nt=1331
+[SIFT profile] total=41.3ms grab=10.9 prep=3.2 sift_q=19.3 train=1.9 knn(bf)=1.1 ratio=0.1 pose=4.8 tmpl=0.0 | nq=260 nt=1250
+[SIFT profile] total=25.7ms grab=6.6 prep=2.9 sift_q=11.2 train=1.5 knn(bf)=1.6 ratio=0.1 pose=1.8 tmpl=0.0 | nq=268 nt=1296
+[SIFT profile] total=17.4ms grab=6.3 prep=1.0 sift_q=5.4 train=1.4 knn(bf)=0.9 ratio=0.1 pose=2.3 tmpl=0.0 | nq=241 nt=1361
+[SIFT profile] total=18.4ms grab=6.6 prep=1.0 sift_q=7.2 train=1.0 knn(bf)=1.0 ratio=0.1 pose=1.5 tmpl=0.0 | nq=224 nt=1430
+[SIFT profile] total=27.6ms grab=10.5 prep=0.9 sift_q=7.8 train=2.9 knn(bf)=1.6 ratio=0.1 pose=3.7 tmpl=0.0 | nq=141 nt=1842
+[SIFT profile] total=21.9ms grab=9.3 prep=1.6 sift_q=5.9 train=1.9 knn(bf)=1.2 ratio=0.1 pose=2.0 tmpl=0.0 | nq=227 nt=1788
+[SIFT profile] total=27.6ms grab=7.7 prep=1.6 sift_q=13.2 train=1.6 knn(bf)=1.5 ratio=0.1 pose=2.0 tmpl=0.0 | nq=205 nt=1763
+[SIFT profile] total=24.3ms grab=10.3 prep=2.0 sift_q=8.5 train=1.3 knn(bf)=1.1 ratio=0.1 pose=1.0 tmpl=0.0 | nq=242 nt=1717
+[SIFT profile] total=43.5ms grab=10.1 prep=4.1 sift_q=20.1 train=3.1 knn(bf)=3.7 ratio=0.2 pose=2.2 tmpl=0.0 | nq=312 nt=1839
+[SIFT profile] total=26.8ms grab=5.5 prep=2.2 sift_q=14.2 train=2.1 knn(bf)=1.6 ratio=0.1 pose=1.1 tmpl=0.0 | nq=309 nt=1876
+[SIFT profile] total=34.3ms grab=10.9 prep=1.5 sift_q=14.8 train=1.9 knn(bf)=3.8 ratio=0.2 pose=1.1 tmpl=0.0 | nq=299 nt=1932
+[SIFT profile] total=24.9ms grab=7.6 prep=1.9 sift_q=10.9 train=1.4 knn(bf)=2.0 ratio=0.1 pose=0.9 tmpl=0.0 | nq=319 nt=1949
+[SIFT profile] total=24.8ms grab=10.0 prep=1.7 sift_q=7.2 train=2.3 knn(bf)=2.0 ratio=0.2 pose=1.4 tmpl=0.0 | nq=309 nt=2122
+[SIFT profile] total=29.8ms grab=8.9 prep=1.9 sift_q=11.0 train=2.7 knn(bf)=3.3 ratio=0.2 pose=1.8 tmpl=0.0 | nq=288 nt=2300
+[SIFT profile] total=29.6ms grab=11.1 prep=1.7 sift_q=11.1 train=2.3 knn(bf)=1.3 ratio=0.1 pose=1.9 tmpl=0.0 | nq=231 nt=2231
+[SIFT profile] total=32.7ms grab=13.5 prep=2.4 sift_q=10.3 train=1.9 knn(bf)=2.2 ratio=0.1 pose=2.3 tmpl=0.0 | nq=260 nt=2092
+[SIFT profile] total=27.0ms grab=10.7 prep=1.4 sift_q=9.3 train=2.2 knn(bf)=1.9 ratio=0.2 pose=1.4 tmpl=0.0 | nq=308 nt=1961
+[SIFT profile] total=26.0ms grab=8.0 prep=2.8 sift_q=10.0 train=1.9 knn(bf)=1.9 ratio=0.1 pose=1.2 tmpl=0.0 | nq=294 nt=2105
+[SIFT profile] total=26.2ms grab=6.4 prep=1.5 sift_q=12.9 train=2.2 knn(bf)=1.2 ratio=0.1 pose=1.8 tmpl=0.0 | nq=288 nt=1898
+[SIFT profile] total=27.5ms grab=7.6 prep=1.5 sift_q=11.2 train=2.6 knn(bf)=2.7 ratio=0.2 pose=1.6 tmpl=0.0 | nq=273 nt=1799
+[SIFT profile] total=40.0ms grab=9.2 prep=1.3 sift_q=16.3 train=5.1 knn(bf)=4.5 ratio=0.2 pose=3.3 tmpl=0.0 | nq=324 nt=1736
+[SIFT profile] total=30.7ms grab=10.6 prep=2.4 sift_q=10.8 train=2.7 knn(bf)=1.5 ratio=0.1 pose=2.7 tmpl=0.0 | nq=303 nt=1638
+[SIFT profile] total=22.0ms grab=6.7 prep=2.1 sift_q=9.3 train=1.1 knn(bf)=1.0 ratio=0.1 pose=1.7 tmpl=0.0 | nq=307 nt=1450
+[SIFT profile] total=33.9ms grab=8.8 prep=3.5 sift_q=14.9 train=1.5 knn(bf)=1.7 ratio=0.1 pose=3.4 tmpl=0.0 | nq=297 nt=1352
+[SIFT profile] total=38.9ms grab=13.8 prep=2.7 sift_q=14.1 train=2.6 knn(bf)=1.4 ratio=0.2 pose=4.1 tmpl=0.0 | nq=300 nt=1359
+[SIFT profile] total=34.9ms grab=8.4 prep=3.2 sift_q=12.7 train=2.4 knn(bf)=2.8 ratio=0.1 pose=4.9 tmpl=0.0 | nq=275 nt=1455
+[SIFT profile] total=41.0ms grab=12.3 prep=2.5 sift_q=16.9 train=1.9 knn(bf)=3.0 ratio=0.1 pose=4.3 tmpl=0.0 | nq=234 nt=1694
+[SIFT profile] total=120.9ms grab=6.6 prep=1.7 sift_q=6.6 train=1.4 knn(bf)=1.6 ratio=0.1 pose=10.7 tmpl=92.3 | nq=270 nt=2223
+[SIFT profile] total=37.8ms grab=13.7 prep=2.3 sift_q=13.0 train=4.2 knn(bf)=1.3 ratio=0.1 pose=3.2 tmpl=0.0 | nq=282 nt=2193
+[SIFT profile] total=40.9ms grab=10.6 prep=1.5 sift_q=19.9 train=3.5 knn(bf)=3.4 ratio=0.2 pose=1.8 tmpl=0.0 | nq=325 nt=2136
+[SIFT profile] total=26.3ms grab=11.0 prep=1.1 sift_q=9.6 train=1.7 knn(bf)=1.6 ratio=0.1 pose=1.1 tmpl=0.0 | nq=326 nt=2053
+[SIFT profile] total=26.1ms grab=9.2 prep=1.6 sift_q=9.7 train=2.0 knn(bf)=1.7 ratio=0.1 pose=1.6 tmpl=0.0 | nq=326 nt=2175
+[SIFT profile] total=36.0ms grab=11.8 prep=3.2 sift_q=13.9 train=2.1 knn(bf)=3.0 ratio=0.2 pose=1.7 tmpl=0.0 | nq=323 nt=2361
+[SIFT profile] total=22.7ms grab=10.8 prep=1.8 sift_q=6.7 train=1.3 knn(bf)=1.5 ratio=0.1 pose=0.6 tmpl=0.0 | nq=300 nt=2555
+[SIFT profile] total=22.1ms grab=7.0 prep=1.9 sift_q=8.3 train=1.9 knn(bf)=2.1 ratio=0.1 pose=0.9 tmpl=0.0 | nq=309 nt=2644
+[SIFT profile] total=26.2ms grab=10.8 prep=2.6 sift_q=8.4 train=1.7 knn(bf)=1.7 ratio=0.1 pose=0.7 tmpl=0.0 | nq=284 nt=2685
